@@ -62,6 +62,6 @@ body{ /*per applicare in tutto il body*/
         In this case we target the .menu and we turn the height back to 100% to show the menu.
     */
     #toggler:checked ~ .menu{
-        max-height: 100%;
+        max-height: 200%;
     }
 }
