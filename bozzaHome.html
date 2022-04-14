@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--importo bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!--Importo reset-->
+    <link rel="stylesheet" href="reset.css">
+    <!--Importo il file css style-->
+    <link rel="stylesheet" href="bozzaHomeStyle.css">
+    <!--Importo font api google (da riga 13 a 16)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Beau+Rivage&family=IBM+Plex+Sans:ital@1&family=Lobster&display=swap" rel="stylesheet">
+    <!--inserimeto jquery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <title>Home</title>
+</head>
+<body background="https://img.freepik.com/free-vector/grunge-paper-background_1048-10026.jpg?w=2000">
+    <div class="header_top">
+        <div class="logo_top"><img src="images/Logo1-piccolo.png" alt="Logo"></div>
+        <ul class="menu_top">
+            <li style="float:right"><a href="">Account</a></li>
+            <li style="float:right"><a href="">Lingua</a></li>
+        </ul>
+        <!--Da qui in giù è seconda navbar-->
+    </div>
+    <div class="header">
+        <ul class="menu">
+            <li><a href="">Sezione 1</a></li>
+            <li class="divisorio">|</li>
+            <li><a href="">Sezione 2</a></li>
+            <li class="divisorio">|</li>
+            <li><a href="">Sezione 3</a></li>
+        </ul>
+        
+        <div class="hamburger">
+            <span></span><span></span><span></span> <!--sono le tre linee del menu hamburger-->
+        </div>
+    </div>
+
+    <!--(uso jquery) Esegue lo script jQuery quando il documento è pronto (Doc Ready)-->
+    <script>
+        $(document).ready(function () {
+            /*Quando si clicca il menu hamburger verrà inserito la classe menu*/
+            /*Open panel*/
+            $(".hamburger").on('click', function() {
+                $(".menu").toggleClass("menu--open");
+            }); /*il target sarà il nostro menu*/    
+        });
+        $(document).ready(function () {
+            /*Quando si clicca il menu hamburger verrà inserito la classe menu*/
+            /*Open panel*/
+            $(".hamburger").on('click', function() {
+                $(".menu_top").toggleClass("menu--open");
+            }); /*il target sarà il nostro menu*/    
+        });
+        
+    </script>
+
+</body>
+</html>
+

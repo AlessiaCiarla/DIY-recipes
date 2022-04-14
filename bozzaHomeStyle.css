@@ -1,0 +1,123 @@
+/*  BASE STYLE  */
+body{ /*per applicare in tutto il body*/
+    font-family: 'Beau Rivage', cursive;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-family: 'Lobster', cursive;
+    font-size: 16px;
+}
+/*stile dei link con a*/
+a{text-decoration: none;}
+h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
+.big-text{font-size: 70px; font-weight: bold;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+.intro-text{text-transform: uppercase; font-size:20px;font-weight:bold;}
+.button{
+    padding:18px 28px;
+    background: #316bff;
+    color:#fff;
+    display: inline-block;
+    border-radius: 4px;
+}
+/*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
+@media (max-width:768px){
+    .big-text{font-size: 40px;} /*per mobile è eccessivo quello precedente*/
+}
+
+/*  HEADER TOP */ 
+/***********/
+.header_top{
+    
+    color:#fff;
+    width: 100%;
+    position: fixed;
+    top:0;
+    left:50%; /*trasla lo header alla metà della pagina*/
+    transform: translateX(-50%); /*trasla sull'asse x del 50% della sua larghezza indietro, perchè c'è il meno*/
+    padding:0px;
+    display:flex;
+    max-width: 1350px;
+} 
+.logo_top{
+    position:fixed;
+    left:40%;
+    top:0;
+    z-index:1;
+}
+.menu_top{
+    background-color:#fff;
+    width:100%;
+    z-index:0;
+}
+.menu_top li{display:inline-block;}
+ .menu_top li a{
+    color:black;
+    padding:10px;
+    display:inline-block;  
+}
+/***********/
+/*  HEADER */
+.header{
+     width: 100%;
+     position: fixed;
+     top:30px;
+     left:50%; /*trasla lo header alla metà della pagina*/
+     transform: translateX(-50%); /*trasla sull'asse x del 50% della sua larghezza indietro, perchè c'è il meno*/
+     padding:0px;
+     display:flex;
+     max-width: 1350px;
+     z-index:0;
+ }
+ .menu{
+    background-color:#fff; 
+    width:100%;
+    z-index:0;
+ }
+ .menu li{display:inline-block;padding-left:30px;padding-right:30px;}
+ .menu li a{
+    color:black;
+    padding:15px;
+    padding-left:30px;
+    padding-right:30px;
+    display:block;      
+}
+.divisorio{display:block;}
+.hamburger{display:none;} /*a schermo intero non c'è*/
+@media (max-width:768px){
+    .divisorio{display: none;} /*non si dovrebbero vedere le stanghette e invece si vedono :(*/
+    /*sistemare lingua e account*/
+    .menu_top{position: absolute; top:0; right: -100%;/*in questo modo lo trasla*/ background: rgb(255, 255, 255); height: 100vh; /*questo fa occupare tutta la schermata*/ padding-top: 80px; /*questo sposta giù la navbar*/}
+    .menu_top li{display:block;/*questo dispone "home" "single" e "contact" in verticale, uno sopra l'altro*/}
+    .menu_top li a{padding:15px; font-size: 20px;}
+    .menu{position: absolute; top:0; right: -100%;/*in questo modo lo trasla*/ background: rgb(170, 133, 74); height: 100vh; /*questo fa occupare tutta la schermata*/ padding-top: 80px; /*questo sposta giù la navbar*/}
+    /**/
+   
+    .menu li{display:block;/*questo dispone "home" "single" e "contact" in verticale, uno sopra l'altro*/}
+    .menu li a{padding:15px; font-size: 20px;}
+    .menu--open{right:0%;}
+    .hamburger{
+        display:block; /*in modaità mobile comprare il menu hamburger*/
+        width: 30px;
+        height: 30px;
+        position:absolute; /*cosi compare e si vede nella navbar*/
+        top:40px;
+        right: 30px;
+    }
+    .hamburger span{
+        background:#fff;
+        height: 3px;
+        width: 100%; /*il 100% del contenitore, dunque dell'hamburger*/
+        display:block;
+        margin-bottom: 5px;
+    }
+}
+
+/* ALLA FINE */
+*,
+*:before,
+*:after{
+ -webkit-box-sizing: border-box;
+ -moz-box-sizing: border-box;
+ box-sizing: border-box
+} /*Questo per far si che il padding sia racchiuso nell'elemento */ 
