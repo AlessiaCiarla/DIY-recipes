@@ -1,0 +1,11 @@
+     <!--(uso jquery) Esegue lo script jQuery quando il documento è pronto (Doc Ready)-->
+    <script>
+        $(document).ready(function () {
+            /*Quando si clicca il menu hamburger verrà inserito la classe menu*/
+            /*Open panel*/
+            $(".hamburger").on('click', function() {
+                $(".menu").toggleClass("menu--open");
+            }); /*il target sarà il nostro menu*/    
+        });
+
+
