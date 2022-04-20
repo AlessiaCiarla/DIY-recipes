@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/reset.css">
     
     <!--Importare poi il file css-->
-    <link rel="stylesheet" href="css/style.css">
+    <!--<link rel="stylesheet" href="css/style.css">-->
     
 
     <!--Importo font api google (da scegliere)-->
@@ -30,7 +30,7 @@
         <div class="container-fluid">
             <a class="navbar-brand" href="#">
                 <!--fare logo animato-->
-                <img src="images/Logo1.png" alt="logo" style="width:300px;">
+                <img src="images/Logo1.png" alt="logo" style="width:15rem;">
             </a>
 
             <!--bottone menu hamburger-->
@@ -61,13 +61,25 @@
                     </li>
                 </ul>
             </div>
-        </div>
+        </div>    
     </nav>
 
-
-
-
-
+        <!-- As a heading -->
+        <nav class="navbar sticky-top navbar-expand-lg navbar-light" style="background-color: #923d55;">
+            <div class="container-fluid">
+                <!--per menu hamburger-->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#" style="color:white">Sezione 1</a>
+                    <a class="nav-link active" aria-current="page" href="#" style="color:white">Sezione 2</a>
+                    <a class="nav-link active" aria-current="page" href="#" style="color:white">Sezione 3</a>
+                    <a class="nav-link active" aria-current="page" href="#" style="color:white">Sezione 4</a>
+                </div>
+            </div>
+        </nav>
 
     <!--Bootstrap js-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
