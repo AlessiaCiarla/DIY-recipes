@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8">
+    <title>Responsive Login Page</title>
+    <link rel="stylesheet" href="style.css">
+   
+    <!--Importo font api google (da scegliere)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> <!--omino account-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
+  </head>
+  <body>
+
+    <!--Copiare la navbar quando sarà finita-->
+    
+  <!--Inizio area form-->
+    <div class="form">
+      <!-- Inizio form login-->
+      <form class="login-form" action="login.php" method="POST"> <!--Qui si deve inseriere il codice php con un redirect su una pagina, esempi: home, area personale account -->
+        <i class="fas fa-user-circle"></i> <!--omino account-->
+        
+        <input class="user-input" type="text" name="username" id="username" placeholder="Username" required> 
+        <input class="user-input" type="password" name="password" placeholder="Password" required>
+        
+        <div class="options-01">
+          <label class="remember-me"><input type="checkbox" name="">Ricorda</label><!--scrivere i name per usarli su file php-->
+          <a href="#">Hai dimenticato la password?</a>
+        </div>
+
+        <input class="btn" type="submit" name="" value="LOGIN"> <!--scrivere i name per usarli su file php-->
+        
+        <div class="options-02">
+          <p>Non sei registrato? <a href="#">Crea un Account</a></p>
+        </div>
+      </form>
+      <!--Fine form login-->
+      <!--Inzio form registrazione-->
+      <form class="signup-form" action="registrazione.php" method="POST"><!--Qui si deve inseriere il codice php con un redirect su una pagina, esempi: home, area personale account -->
+        <i class="fas fa-user-plus"></i>
+
+        <input class="user-input" type="text" name="username" id="username" placeholder="Username" required>
+        <input class="user-input" type="email" name="email" id="email" placeholder="Indirizzo email" required>
+        <input class="user-input" type="password" name="password" id="password" placeholder="Password" required>
+        <input class="btn" type="submit" name="" value="Registrati"><!--scrivere i name per usarli su file php-->
+
+        <div class="options-02">
+          <p>Hai già un account? <a href="#">Accedi</a></p>
+        </div>
+
+      </form>
+      <!--Fine form registrazione-->
+    </div>
+    <!--Fine area form-->
+
+    <script type="text/javascript">
+    $('.options-02 a').click(function(){
+      $('form').animate({
+        height: "toggle", opacity: "toggle"
+      }, "slow");
+    });
+    </script>
+    <!--
+        Cose da fare:
+        - check username con ajax
+        - validazioen form con JS
+    -->
+  </body>
+</html>
+      
