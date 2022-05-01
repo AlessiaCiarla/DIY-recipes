@@ -3,7 +3,7 @@ body{ /*per applicare in tutto il body*/
 }
 
 /* stile personalizzato dei link, bottone e testo*/
-a{text-decoration: none;}
+/*a{text-decoration: none;}
 h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
 .big-text{font-size: 70px; font-weight: bold;}
 .med-text{font-size: 40px;}
@@ -16,11 +16,11 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
     color:#fff;
     display: inline-block;
     border-radius: 4px;
-}
+}*/
 
 /*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
 @media (max-width:768px){
-    .big-text{font-size: 40px;} /*per mobile è eccessivo quello precedente*/
+    .big-text{font-size: 40px;} 
 }
 
 .navbar{
@@ -30,11 +30,11 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
     display:flex;
  }
 
- .navbar-brand{
+ /*.navbar-brand{
     position: absolute;
     left: 42%;
-    margin-left: -50px !important;  /* 50% of your logo width */
+    margin-left: -50px !important;
     display: block;
- }
+ }*/
 
  

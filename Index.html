@@ -1,87 +1,150 @@
 <!DOCTYPE html>
 <html lang="it">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-
-    <!--Importo reset-->
-    <link rel="stylesheet" href="css/reset.css">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!--Importare poi il file css-->
-    <link rel="stylesheet" href="css/style.css">
-    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 
-    <!--Importo font api google (da scegliere)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-    
-    <title>Home - DIY-recipes</title>
-</head>
+        <!--Importo reset-->
+        <link rel="stylesheet" href="css/reset.css">
 
-<body background="https://img.freepik.com/free-vector/grunge-paper-background_1048-10026.jpg?w=2000"> <!--come occupare full screen senza ripetizioni-->
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+
+        <!--Importare poi il file css-->
+        <link rel="stylesheet" href="css/style.css">
+
+        <!--Importo font api google (da scegliere)-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
     
-    <!--navbar1-->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+        <title>Home - DIY-recipes</title>
+    </head>
+
+    <body background="https://img.freepik.com/free-vector/grunge-paper-background_1048-10026.jpg?w=2000">
+
+        <!--navbar1-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <a class="navbar-brand" href="#">
-                <!--fare logo animato-->
                 <img src="images/Logo1.png" alt="logo" style="width:15rem;">
             </a>
-
-            <!--bottone menu hamburger-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span> 
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNavDropdown">
-
-                <!--navbar modalità desktop-->
-                <ul class="navbar-nav"> 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Italiano
-                        </a>
-                        <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">English</a></li>
-                            <li><a class="dropdown-item" href="#">Italiano</a></li>
-                            <li><a class="dropdown-item" href="#">Español</a></li>
-                            <img data-v-1d03d8cc="" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABHNCSVQICAgIfAhkiAAAAAlwSFlzAAAA3QAAAN0BcFOiBwAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAABmSURBVFiFY/z//z/DQAKmAbV91AGDwQGMZgxcDwfUAQwMDAOaDQY8CkYdMOoAlkoGsQF1AOMNBvXRbDjqgJHtABbBBN4BdQDj/1suo9lw1AEj2wEs307+fDSQDmAc7ZqNOmCgHQAAqgYSHLp/9coAAAAASUVORK5CYII=" height="20px" width="20px" alt="." class="sel-flags">
-                            <span data-v-1d03d8cc="" class="selected">Deutsch</span>
-                        </ul>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="#">Chi siamo</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Accedi/Registrati</a>
-                    </li>
-                </ul>
-            </div>
-        </div>    
-    </nav>
-
-        <!-- As a heading -->
-        <nav class="navbar2 sticky-top navbar-expand-lg navbar-light" style="background-color: #923d55;">
-            <div class="container-fluid">
-                <!--per menu hamburger-->
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                    <div class="navbar-nav">
-                    <a class="nav-link active" aria-current="page" href="#" style="color:white">Sezione 1</a>
-                    <a class="nav-link active" aria-current="page" href="#" style="color:white">Sezione 2</a>
-                    <a class="nav-link active" aria-current="page" href="#" style="color:white">Sezione 3</a>
-                    <a class="nav-link active" aria-current="page" href="#" style="color:white">Sezione 4</a>
+            <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link" href="#">Italiano</a>
+                    <a class="nav-item nav-link" href="#">Chi siamo</a>
+                    <a class="nav-item nav-link" href="#">Accedi/Registrati</a>
                 </div>
             </div>
         </nav>
-
-    <!--Bootstrap js-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
-</body>
+    
+        <nav class="navbar2 navbar-expand-lg navbar-light py-0 bg-light px-lg-2">
+            <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Link</a>
+                    <a class="nav-item nav-link" href="#">Link</a>
+                    <a class="nav-item nav-link" href="#">Link</a>
+                    <a class="nav-item nav-link disabled" href="#">Link</a>
+                </div>
+            </div>
+        </nav>
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+    
+        <script>
+            // prevent navigation
+            document.addEventListener("DOMContentLoaded", function() {
+                var links = document.getElementsByTagName("A");
+                for(var i=0; i < links.length; i++) {
+                    links[i].addEventListener("click", function(e) {
+                        var href = this.getAttribute("href")
+            
+                        if (!href) {
+                            return
+                        }
+            
+                        if (href === '#') {
+                            // hash only ('#')
+                            console.debug('Internal nav allowed by Codeply');
+                            e.preventDefault()
+                        }
+                        else if (this.hash) {
+                            // hash with tag ('#foo')
+                            var element = null
+                            try {
+                                element = document.querySelector(this.hash)
+                            }
+                            catch(e) {
+                                console.debug('Codeply internal nav querySelector failed')
+                            }
+                            if (element) {
+                                // scroll to anchor
+                                e.preventDefault();
+                                const top = element.getBoundingClientRect().top + window.pageYOffset
+                                //window.scrollTo({top, behavior: 'smooth'})
+                                window.scrollTo(0,top)
+                                console.debug('Internal anchor controlled by Codeply to element:' + this.hash)
+                            }
+                            else {
+                                // allow javascript routing
+                                console.debug('Internal nav route allowed by Codeply');
+                            }
+                        }
+                        else if (href.indexOf("/p/")===0 || href.indexOf("/v/")===0) {
+                            // special multi-page routing
+                            console.debug('Special internal page route: ' + href)
+                
+                            var l = href.replace('/p/','/v/')
+            
+                            // reroute
+                            e.preventDefault()
+                            var newLoc = l + '?from=internal'
+                            console.debug('Internal view will reroute to ' + newLoc) 
+                            location.href = newLoc
+                        }
+                        else if (href.indexOf("./")===0) {
+                            // special multi-page routing
+                            console.debug('Special internal ./ route: ' + href)
+                
+                            var u = parent.document.URL.split("/")
+                            var pn = href.split("/")[1]
+                            var plyId = u[u.length-1]
+            
+                            if (plyId.indexOf('?from')>-1) {
+                                // already rerouted this
+                                console.debug('already rerouted')
+                                plyId = u[u.length-2]
+                            }
+            
+                            var l = plyId + '/' + pn
+                            
+                            console.debug(u)
+                            console.debug(pn)
+                            console.debug('l',l)
+                
+                            // reroute
+                            e.preventDefault()
+                            var newLoc = '/v/' + l + '?from=internal'
+                            console.debug('Internal page will reroute to ' + newLoc) 
+                            location.href = newLoc
+                        }
+                        else {
+                            // no external links
+                            e.preventDefault();
+                            console.debug('External nav prevented by Codeply');
+                        }
+                        //return false;
+                    })
+                }
+            }, null);
+        </script>
+    </body>
 </html>
