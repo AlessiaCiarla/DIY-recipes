@@ -119,10 +119,6 @@ body{ background: #923d55;}
       
       display:contents;
   }
-  #navbarNavAltMarkup{
-    left:5%; 
-    position:relative; 
-  }
 }
 .navbar{
   width: 100%;
