@@ -3,72 +3,198 @@
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta charset="utf-8">
-    <title>Responsive Login Page</title>
+    <title>DIY-recipes</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <!--file reset css-->
+    <link rel="stylesheet" href="../Home/reset.css">
+    <!--css form-->
     <link rel="stylesheet" href="style.css">
-   
     <!--Importo font api google (da scegliere)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"> <!--omino account-->
+     <!--omino account-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
   </head>
   <body>
 
-    <!--Copiare la navbar quando sarà finita-->
+            <!------------------------------------------------------------------------navbar----------------------------------------------------------------------->
+       
+            <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+              <a class="navbar-brand" href="#">
+                  <img src="../images/Logo1.png" alt="logo" style="width:13rem;">
+              </a>
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+                  <div class="navbar-nav" id="info">
+                      <a class="nav-item nav-link" href="#">Italiano</a>
+                      <a class="nav-item nav-link" href="#">About</a>
+                      <a class="nav-item nav-link" href="../accedi-registrati/account.html">Accedi</a>
+                  </div>
+              </div>
+          </nav>
+      
+          <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
+              <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                      <a class="nav-item nav-link active" href="#">Primi</a>
+                      <a class="nav-item nav-link" href="#">Secondi</a>
+                      <a class="nav-item nav-link" href="#">Contorni</a>
+                      <a class="nav-item nav-link" href="#">Dolci</a>
+                  </div>
+              </div>
+          </nav>
+      
+          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+      
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+      
+          <script>
+              // prevent navigation
+              document.addEventListener("DOMContentLoaded", function() {
+                  var links = document.getElementsByTagName("A");
+                  for(var i=0; i < links.length; i++) {
+                      links[i].addEventListener("click", function(e) {
+                          var href = this.getAttribute("href")
+              
+                          if (!href) {
+                              return
+                          }
+              
+                          if (href === '#') {
+                              // hash only ('#')
+                              console.debug('Internal nav allowed by Codeply');
+                              e.preventDefault()
+                          }
+                          else if (this.hash) {
+                              // hash with tag ('#foo')
+                              var element = null
+                              try {
+                                  element = document.querySelector(this.hash)
+                              }
+                              catch(e) {
+                                  console.debug('Codeply internal nav querySelector failed')
+                              }
+                              if (element) {
+                                  // scroll to anchor
+                                  e.preventDefault();
+                                  const top = element.getBoundingClientRect().top + window.pageYOffset
+                                  //window.scrollTo({top, behavior: 'smooth'})
+                                  window.scrollTo(0,top)
+                                  console.debug('Internal anchor controlled by Codeply to element:' + this.hash)
+                              }
+                              else {
+                                  // allow javascript routing
+                                  console.debug('Internal nav route allowed by Codeply');
+                              }
+                          }
+                          else if (href.indexOf("/p/")===0 || href.indexOf("/v/")===0) {
+                              // special multi-page routing
+                              console.debug('Special internal page route: ' + href)
+                  
+                              var l = href.replace('/p/','/v/')
+              
+                              // reroute
+                              e.preventDefault()
+                              var newLoc = l + '?from=internal'
+                              console.debug('Internal view will reroute to ' + newLoc) 
+                              location.href = newLoc
+                          }
+                          else if (href.indexOf("./")===0) {
+                              // special multi-page routing
+                              console.debug('Special internal ./ route: ' + href)
+                  
+                              var u = parent.document.URL.split("/")
+                              var pn = href.split("/")[1]
+                              var plyId = u[u.length-1]
+              
+                              if (plyId.indexOf('?from')>-1) {
+                                  // already rerouted this
+                                  console.debug('already rerouted')
+                                  plyId = u[u.length-2]
+                              }
+              
+                              var l = plyId + '/' + pn
+                              
+                              console.debug(u)
+                              console.debug(pn)
+                              console.debug('l',l)
+                  
+                              // reroute
+                              e.preventDefault()
+                              var newLoc = '/v/' + l + '?from=internal'
+                              console.debug('Internal page will reroute to ' + newLoc) 
+                              location.href = newLoc
+                          }
+                          else {
+                              // no external links
+                              e.preventDefault();
+                              console.debug('External nav prevented by Codeply');
+                          }
+                          //return false;
+                      })
+                  }
+              }, null);
+          </script>
     
-  <!--Inizio area form-->
+  <!----------------------------------------------------------------Inizio area form----------------------------------------->
+  <div class="container">
     <div class="form">
-      <!-- Inizio form login-->
-      <form class="login-form" action="login.php" method="POST"> <!--Qui si deve inseriere il codice php con un redirect su una pagina, esempi: home, area personale account -->
-        <i class="fas fa-user-circle"></i> <!--omino account-->
-        
-        <input class="user-input" type="text" name="username" id="username" placeholder="Username" required> 
-        <input class="user-input" type="password" name="password" placeholder="Password" required>
-        
-        <div class="options-01">
-          <label class="remember-me"><input type="checkbox" name="">Ricorda</label><!--scrivere i name per usarli su file php-->
-          <a href="#">Hai dimenticato la password?</a>
-        </div>
+        <!-- Inizio form login-->
+        <form class="login-form" action="login.php" method="POST"> <!--Qui si deve inseriere il codice php con un redirect su una pagina, esempi: home, area personale account -->
+          <i class="fas fa-user-circle"></i> <!--omino account-->
+          
+          <input class="user-input" type="text" name="username" id="username" placeholder="Username" required> 
+          <input class="user-input" type="password" name="password" placeholder="Password" required>
+          
+          <div class="options-01">
+            
+            <a href="#">Hai dimenticato la password?</a>
+          </div>
 
-        <input class="btn" type="submit" name="" value="LOGIN"> <!--scrivere i name per usarli su file php-->
-        
-        <div class="options-02">
-          <p>Non sei registrato? <a href="#">Crea un Account</a></p>
-        </div>
-      </form>
-      <!--Fine form login-->
-      <!--Inzio form registrazione-->
-      <form class="signup-form" action="registrazione.php" method="POST"><!--Qui si deve inseriere il codice php con un redirect su una pagina, esempi: home, area personale account -->
-        <i class="fas fa-user-plus"></i>
+          <input class="btn" type="submit" name="" value="LOGIN"> <!--scrivere i name per usarli su file php-->
+          
+          <div class="options-02">
+            <p>Non sei registrato? <a href="#">Crea un Account</a></p>
+          </div>
+        </form>
+        <!--Fine form login-->
+        <!--Inzio form registrazione-->
+        <form class="signup-form" action="registrazione.php" method="POST"><!--Qui si deve inseriere il codice php con un redirect su una pagina, esempi: home, area personale account -->
+          <i class="fas fa-user-plus"></i>
 
-        <input class="user-input" type="text" name="username" id="username" placeholder="Username" required>
-        <input class="user-input" type="email" name="email" id="email" placeholder="Indirizzo email" required>
-        <input class="user-input" type="password" name="password" id="password" placeholder="Password" required>
-        <input class="btn" type="submit" name="" value="Registrati"><!--scrivere i name per usarli su file php-->
+          <input class="user-input" type="text" name="username" id="username" placeholder="Username" required>
+          <input class="user-input" type="email" name="email" id="email" placeholder="Indirizzo email" required>
+          <input class="user-input" type="password" name="password" id="password" placeholder="Password" required>
+          <input class="btn" type="submit" name="" value="Registrati"><!--scrivere i name per usarli su file php-->
 
-        <div class="options-02">
-          <p>Hai già un account? <a href="#">Accedi</a></p>
-        </div>
+          <div class="options-02">
+            <p>Hai già un account? <a href="#">Accedi</a></p>
+          </div>
 
-      </form>
-      <!--Fine form registrazione-->
+        </form>
+        <!--Fine form registrazione-->
+      </div>
+      <!--Fine area form-->
+
+      <script type="text/javascript">
+      $('.options-02 a').click(function(){
+        $('form').animate({
+          height: "toggle", opacity: "toggle"
+        }, "slow");
+      });
+      </script>
+      <!--
+          Cose da fare:
+          - check username con ajax
+          - validazioen form con JS
+      -->
     </div>
-    <!--Fine area form-->
-
-    <script type="text/javascript">
-    $('.options-02 a').click(function(){
-      $('form').animate({
-        height: "toggle", opacity: "toggle"
-      }, "slow");
-    });
-    </script>
-    <!--
-        Cose da fare:
-        - check username con ajax
-        - validazioen form con JS
-    -->
   </body>
 </html>
       

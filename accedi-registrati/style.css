@@ -6,8 +6,9 @@
   box-sizing: border-box;
   text-decoration: none;
 }
-
-body{
+body{ background: #923d55;}
+/*stile del FORM*/
+.container{
   height: 100vh;
   display: flex;
   justify-content: center;
@@ -15,25 +16,22 @@ body{
   background: #923d55;
   font-family: 'Lora', serif;
 }
-
 .form{
-  z-index: 1;
+  z-index: 0;
   position: absolute;
   width: 320px;
   text-align: center;
+  top:150px;
 }
-
 .form i{
   z-index: 1;
   color: rgb(255, 255, 255);
   font-size: 65px;
   margin-bottom: 30px;
 }
-
 .form .signup-form{
   display: none;
 }
-
 .form .user-input{
   width: 320px;
   height: 55px;
@@ -48,39 +46,37 @@ body{
   transition: 0.5s;
   transition-property: border-left, border-right, box-shadow;
 }
-
 .form .user-input:hover, .form .user-input:focus, .form .user-input:active{
   border-left: solid 8px #ffffff;
   border-right: solid 8px #ffffff;
   box-shadow: 0 0 100px rgba(117, 37, 57, 0.8);
 }
-
+/*Ricordami e Hai dimenticato password*/
 .form .options-01{
-  margin-bottom: 50px;
+  margin-bottom: 25px;
 }
-
 .form .options-01 input{
   width: 15px;
   height: 15px;
   margin-right: 5px;
 }
-/*Rcorda*/
-.form .options-01 .remember-me{
+/*Ricordami --> DA FARE REMEMBER ME SE SI HA TEMPO*/
+/*.form .options-01 .remember-me{
   color: #bbb;
   font-size: 14px;
   display: flex;
   align-items: center;
   float: left;
   cursor: pointer;
-}
-/*hai dimenticato la password?*/
+}*/
+/*Hai dimenticato la password? --> DA FARE RECUPERO PASSWORD se si ha tempo*/
 .form .options-01 a{
   color: #bbb;
-  font-size: 14px;
+  font-size: 13px;
   font-style: italic;
-  float: right;
+
 }
-/*!! rgba(240, 82, 82, 0.8)*/
+/*bottone*/
 .form .btn{
   outline: none;
   border: none;
@@ -95,35 +91,57 @@ body{
   transition: 0.5s;
   transition-property: border-left, border-right, box-shadow;
 }
-
 .form .btn:hover{
   border-left: solid 8px rgba(255, 255, 255, 0.5);
   border-right: solid 8px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 100px rgba(250, 250, 250, 0.8);
 }
-
+/*scritte Ricorda e Recupero password*/
 .form .options-02{
   color: #bbb;
   font-size: 14px;
   margin-top: 30px;
 }
-
 .form .options-02 a{
-  color: #4286f4c6;
+  color: #bbb; /*Accedi*/
 }
-
-/* Responsive CSS */
-
+/*CSS responsive per schemi piccoli */
 @media screen and (max-width: 500px){
-  .form{
-    width: 95%;
+  .form{width: 95%;}
+  .form .user-input{width: 100%}
+  .form .btn{width: 100%;}
+}
+/*Navbar*/
+/*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
+@media (max-width:990px){
+  .big-text{font-size: 40px;} 
+  #info{
+      
+      display:contents;
   }
-
-  .form .user-input{
-    width: 100%
-  }
-
-  .form .btn{
-    width: 100%;
+  #navbarNavAltMarkup{
+    left:5%; 
+    position:relative; 
   }
 }
+.navbar{
+  width: 100%;
+  position:relative;
+  display:flex;
+  z-index: 1;
+}
+#info{
+  position: absolute;
+  left: 80%;    
+}
+
+/*
+.navbar{
+  top:0px;
+  position: absolute;
+}
+#navbarNavAltMarkup2{
+  top:60px;
+  position: relative;
+}
+*/
