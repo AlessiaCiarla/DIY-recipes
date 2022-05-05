@@ -1,19 +1,54 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
 
-*{
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  text-decoration: none;
+body{ 
+  background: #635752;
+  font-family: 'Lora', serif;}
+h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
+.big-text{font-size: 70px; font-weight: bold;}
+.med-text{font-size: 40px;}
+.normal-text{font-size: 20px;}
+.small-text{font-size: 14px;}
+.intro-text{text-transform: uppercase; font-size:20px;font-weight:bold;}
+.button{
+    padding:18px 28px;
+    background: #316bff;
+    color:#fff;
+    display: inline-block;
+    border-radius: 4px;
 }
-body{ background: #923d55;}
+/*Navbar*/
+/*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
+@media (max-width:990px){
+  .big-text{font-size: 40px;} 
+  #info{display:contents;}
+}
+.navbar{
+  width: 100%;
+  position:relative;
+  display:flex;
+  z-index: 1;
+}
+#info{
+  position: absolute;
+  left: 80%;    
+}
+/*
+.navbar{
+  top:0px;
+  position: absolute;
+}
+#navbarNavAltMarkup2{
+  top:60px;
+  position: relative;
+}
+*/
 /*stile del FORM*/
 .container{
   height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #923d55;
+  background: #635752;
   font-family: 'Lora', serif;
 }
 .form{
@@ -23,7 +58,7 @@ body{ background: #923d55;}
   text-align: center;
   top:150px;
 }
-.form i{
+.form i{/*omino*/
   z-index: 1;
   color: rgb(255, 255, 255);
   font-size: 65px;
@@ -49,7 +84,7 @@ body{ background: #923d55;}
 .form .user-input:hover, .form .user-input:focus, .form .user-input:active{
   border-left: solid 8px #ffffff;
   border-right: solid 8px #ffffff;
-  box-shadow: 0 0 100px rgba(117, 37, 57, 0.8);
+  box-shadow: 0 0 100px rgba(71,63,60,0.8);
 }
 /*Ricordami e Hai dimenticato password*/
 .form .options-01{
@@ -74,7 +109,6 @@ body{ background: #923d55;}
   color: #bbb;
   font-size: 13px;
   font-style: italic;
-
 }
 /*bottone*/
 .form .btn{
@@ -82,7 +116,7 @@ body{ background: #923d55;}
   border: none;
   width: 320px;
   height: 55px;
-  background: #5b3d92;
+  background: #f9dabb;
   color: #fff;
   font-size: 18px;
   letter-spacing: 1px;
@@ -111,33 +145,3 @@ body{ background: #923d55;}
   .form .user-input{width: 100%}
   .form .btn{width: 100%;}
 }
-/*Navbar*/
-/*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
-@media (max-width:990px){
-  .big-text{font-size: 40px;} 
-  #info{
-      
-      display:contents;
-  }
-}
-.navbar{
-  width: 100%;
-  position:relative;
-  display:flex;
-  z-index: 1;
-}
-#info{
-  position: absolute;
-  left: 80%;    
-}
-
-/*
-.navbar{
-  top:0px;
-  position: absolute;
-}
-#navbarNavAltMarkup2{
-  top:60px;
-  position: relative;
-}
-*/

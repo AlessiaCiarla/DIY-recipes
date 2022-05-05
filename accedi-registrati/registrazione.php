@@ -10,7 +10,7 @@
     $sql = "INSERT INTO utenti (email, username, password) VALUES ('$email', '$username', '$hashed_password')";
 
     if($connessione->query($sql) === true){
-        header("location: area_privata.php"); // oppure redirect su home
+        header("location: account.html"); // oppure redirect su home
     }else{
         echo "Errore durante registrazione utente $sql. " . $connessione->error;
     } 
