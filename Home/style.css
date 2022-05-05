@@ -26,15 +26,12 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
 .navbar{
     width: 100%;
     position:relative;
-    padding:33px;
+    padding:20px;
     display:flex;
+    background-color: #EBB55F;
  }
 
- /*.navbar-brand{
-    position: absolute;
-    left: 42%;
-    margin-left: -50px !important;
-    display: block;
- }*/
+
+ 
 
  
