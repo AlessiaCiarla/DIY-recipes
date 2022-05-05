@@ -46,7 +46,7 @@
                   <div class="navbar-nav" id="info">
                       <a class="nav-item nav-link" href="#">Italiano</a>
                       <a class="nav-item nav-link" href="#">About</a>
-                      <a class="nav-item nav-link" href="../accedi-registrati/account.html"><?php echo " " . $_SESSION['username']?></a>
+                      <a class="nav-item nav-link" href="../accedi-registrati/account.html"><?php echo " " . $_SESSION['username']?>git </a>
                   </div>
               </div>
           </nav>
