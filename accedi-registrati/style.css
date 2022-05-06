@@ -95,21 +95,6 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   height: 15px;
   margin-right: 5px;
 }
-/*Ricordami --> DA FARE REMEMBER ME SE SI HA TEMPO*/
-/*.form .options-01 .remember-me{
-  color: #bbb;
-  font-size: 14px;
-  display: flex;
-  align-items: center;
-  float: left;
-  cursor: pointer;
-}*/
-/*Hai dimenticato la password? --> DA FARE RECUPERO PASSWORD se si ha tempo*/
-.form .options-01 a{
-  color: #bbb;
-  font-size: 13px;
-  font-style: italic;
-}
 /*bottone*/
 .form .btn{
   outline: none;
