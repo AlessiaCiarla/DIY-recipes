@@ -29,7 +29,7 @@
 
         <!--navbar1-->
         <nav class="navbar navbar-expand-lg navbar-light bg-opacity-75">
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="Index.html">
                 <img src="../images/logo.png" alt="logo"  width="220px" height="60px">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -58,93 +58,5 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    
-        <script>
-            // prevent navigation
-            document.addEventListener("DOMContentLoaded", function() {
-                var links = document.getElementsByTagName("A");
-                for(var i=0; i < links.length; i++) {
-                    links[i].addEventListener("click", function(e) {
-                        var href = this.getAttribute("href")
-            
-                        if (!href) {
-                            return
-                        }
-            
-                        if (href === '#') {
-                            // hash only ('#')
-                            console.debug('Internal nav allowed by Codeply');
-                            e.preventDefault()
-                        }
-                        else if (this.hash) {
-                            // hash with tag ('#foo')
-                            var element = null
-                            try {
-                                element = document.querySelector(this.hash)
-                            }
-                            catch(e) {
-                                console.debug('Codeply internal nav querySelector failed')
-                            }
-                            if (element) {
-                                // scroll to anchor
-                                e.preventDefault();
-                                const top = element.getBoundingClientRect().top + window.pageYOffset
-                                //window.scrollTo({top, behavior: 'smooth'})
-                                window.scrollTo(0,top)
-                                console.debug('Internal anchor controlled by Codeply to element:' + this.hash)
-                            }
-                            else {
-                                // allow javascript routing
-                                console.debug('Internal nav route allowed by Codeply');
-                            }
-                        }
-                        else if (href.indexOf("/p/")===0 || href.indexOf("/v/")===0) {
-                            // special multi-page routing
-                            console.debug('Special internal page route: ' + href)
-                
-                            var l = href.replace('/p/','/v/')
-            
-                            // reroute
-                            e.preventDefault()
-                            var newLoc = l + '?from=internal'
-                            console.debug('Internal view will reroute to ' + newLoc) 
-                            location.href = newLoc
-                        }
-                        else if (href.indexOf("./")===0) {
-                            // special multi-page routing
-                            console.debug('Special internal ./ route: ' + href)
-                
-                            var u = parent.document.URL.split("/")
-                            var pn = href.split("/")[1]
-                            var plyId = u[u.length-1]
-            
-                            if (plyId.indexOf('?from')>-1) {
-                                // already rerouted this
-                                console.debug('already rerouted')
-                                plyId = u[u.length-2]
-                            }
-            
-                            var l = plyId + '/' + pn
-                            
-                            console.debug(u)
-                            console.debug(pn)
-                            console.debug('l',l)
-                
-                            // reroute
-                            e.preventDefault()
-                            var newLoc = '/v/' + l + '?from=internal'
-                            console.debug('Internal page will reroute to ' + newLoc) 
-                            location.href = newLoc
-                        }
-                        else {
-                            // no external links
-                            e.preventDefault();
-                            console.debug('External nav prevented by Codeply');
-                        }
-                        //return false;
-                    })
-                }
-            }, null);
-        </script>
     </body>
 </html>
