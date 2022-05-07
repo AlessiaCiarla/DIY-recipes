@@ -21,7 +21,7 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
 /*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
 @media (max-width:990px){
     .big-text{font-size: 40px;} 
-    #menu{display:contents;}
+    #nav1{display:contents;}
   }
 
 .navbar{
@@ -30,13 +30,46 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
     display:flex;
     background-color: #f1ece7;
     z-index: 1;
+    border-bottom: 2px solid #CD7F32;
  }
 
- #menu{
+ #nav1{
     position: absolute;
     left: 70%;    
   }
 
- 
+#nav2{
+    flex: 0.8;
+    margin: auto !important;
+    display: flex;
+    justify-content: space-between;
+}
 
+#nav1 .nav-item:not(:last-child) {
+    border-right: 1px solid #CD7F32;
+    padding-left:20px;
+    padding-right:20px;
+ }
+ #nav1 .nav-item:last-child{
+     padding-left: 20px;
+ }
+ @media (max-width: 990px) {
+   #nav1 .nav-item:not(:last-child) {
+     border-right: none;
+   }
+ }
+
+ #nav2 .nav-item:not(:last-child) {
+    border-right: 1px solid #CD7F32;
+    padding-left:10px;
+    padding-right:70px;
+ }
+ #nav2 .nav-item:last-child{
+     padding-left: 10px;
+ }
+ @media (max-width: 990px) {
+   #nav2 .nav-item:not(:last-child) {
+     border-right: none;
+   }
+ }
  
