@@ -19,18 +19,23 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
 }*/
 
 /*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
-@media (max-width:768px){
+@media (max-width:990px){
     .big-text{font-size: 40px;} 
-}
+    #menu{display:contents;}
+  }
 
 .navbar{
     width: 100%;
     position:relative;
-    padding:20px;
     display:flex;
-    background-color: #EBB55F;
+    background-color: #f1ece7;
+    z-index: 1;
  }
 
+ #menu{
+    position: absolute;
+    left: 70%;    
+  }
 
  
 
