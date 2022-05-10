@@ -86,7 +86,7 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   border-right: solid 8px #ffffff;
   box-shadow: 0 0 100px rgba(71,63,60,0.8);
 }
-/*Ricordami e Hai dimenticato password*/
+/*Ricordami e Hai dimenticato password
 .form .options-01{
   margin-bottom: 25px;
 }
@@ -94,7 +94,7 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   width: 15px;
   height: 15px;
   margin-right: 5px;
-}
+}*/
 /*bottone*/
 .form .btn{
   outline: none;
@@ -115,7 +115,7 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   border-right: solid 8px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 100px rgba(250, 250, 250, 0.8);
 }
-/*scritte Ricorda e Recupero password*/
+
 .form .options-02{
   color: #bbb;
   font-size: 14px;
