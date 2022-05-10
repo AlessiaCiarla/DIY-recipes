@@ -26,11 +26,11 @@ if (isset($_POST['attuale']) && isset($_POST['nuova'])
       header("Location: area_privata.php?error=Scrivere la nuova password");
 	  exit();
     }else if($nuova !== $riscrivi){
-      header("Location: area_privata.php?error=Le pasword non combaciano"); // c'è gia il js
+      header("Location: area_privata.php?error=Le pasword non combaciano"); 
 	  exit();
     }else{
     	// hashing delle password
-    	$attuale = password_hash($attuale, PASSWORD_DEFAULT);// cripta password con hash
+    	$attuale = password_hash($attuale, PASSWORD_DEFAULT);
     	$nuova = password_hash($nuova, PASSWORD_DEFAULT);
         $username = $_SESSION['username'];
         //

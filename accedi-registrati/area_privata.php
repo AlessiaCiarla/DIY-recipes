@@ -89,7 +89,6 @@
             
             <a href="logout.php"><input class="btn" type="submit" name="" value="LOGOUT"></a> 
         </div>
-          
     </div>
 </body>
 </html>

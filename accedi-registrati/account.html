@@ -53,25 +53,19 @@
           </nav>
       
           <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      
           <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
     
   <!----------------------------------------------------------------Inizio area form----------------------------------------->
   <div class="container">
     <div class="form">
         <!-- Inizio form login-->
-        <form class="login-form" action="login.php" method="POST"> <!--Qui si deve inseriere il codice php con un redirect su una pagina, esempi: home, area personale account -->
+        <form class="login-form" action="login.php" method="POST"> 
           <i class="fas fa-user-circle"></i> <!--omino account-->
           
           <input class="user-input" type="text" name="username" id="username" placeholder="Username" required> 
           <input class="user-input" type="password" name="password" placeholder="Password" required>
-          
-          <div class="options-01">
-            
-            <a href="#">Hai dimenticato la password?</a>
-          </div>
 
-          <input class="btn" type="submit" name="" value="LOGIN"> <!--scrivere i name per usarli su file php-->
+          <input class="btn" type="submit" name="" value="LOGIN">
           
           <div class="options-02">
             <p>Non sei registrato? <a href="#">Crea un Account</a></p>
@@ -79,13 +73,13 @@
         </form>
         <!--Fine form login-->
         <!--Inzio form registrazione-->
-        <form class="signup-form" action="registrazione.php" method="POST"><!--Qui si deve inseriere il codice php con un redirect su una pagina, esempi: home, area personale account -->
+        <form class="signup-form" action="registrazione.php" method="POST">
           <i class="fas fa-user-plus"></i>
 
           <input class="user-input" type="text" name="username" id="username" placeholder="Username" required>
           <input class="user-input" type="email" name="email" id="email" placeholder="Indirizzo email" required>
           <input class="user-input" type="password" name="password" id="password" placeholder="Password" required>
-          <input class="btn" type="submit" name="" value="Registrati"><!--scrivere i name per usarli su file php-->
+          <input class="btn" type="submit" name="" value="Registrati">
 
           <div class="options-02">
             <p>Hai già un account? <a href="#">Accedi</a></p>
@@ -103,11 +97,6 @@
         }, "slow");
       });
       </script>
-      <!--
-          Cose da fare:
-          - check username con ajax
-          - validazioen form con JS
-      -->
     </div>
   </body>
 </html>
