@@ -69,23 +69,27 @@
     <div class="container">
         <h1>Area privata di <?php echo " " . $_SESSION['username']?></h1>
         <div class="form">
-            <form class="modificaPassword-form" action="modifica_password.php" method="POST"> <!--Fare cod PHP-->
+            <form class="modificaPassword-form" action="cambia_password.php" method="POST"> 
 
                 <input class="user-input" type="text" name="attuale" id="attuale" placeholder="Password attuale" required> 
                 <input class="user-input" type="password" name="nuova" id="nuova" placeholder="Nuova password" required> 
                 <input class="user-input" type="password" name="riscrivi" id="riscrivi" placeholder="Riscrivi password" required> 
-                <p id="message"></p>
-                <a href="area_privata.php"><input class="btn" onclick="checkPassword()" id="conferma" type="submit" name="conferma" value="CONFERMA"></a>
+                
+                <!--Messaggio errore-->
+                <?php if (isset($_GET['error'])) { ?>
+                        <p class="error"><?php echo $_GET['error']; ?></p>
+                <?php } ?>
+                <!--Messaggio successo-->
+                <?php if (isset($_GET['success'])) { ?>
+                    <p class="success"><?php echo $_GET['success']; ?></p>
+                <?php } ?>
+
+                <a href="area_privata.php"><input class="btn" id="conferma" type="submit" name="conferma" value="CONFERMA"></a>
             </form>
-            <!--Script-->
-            <script src="area_privata_script.js"></script>
+            
             <a href="logout.php"><input class="btn" type="submit" name="" value="LOGOUT"></a> 
         </div>
-            <!--
-                Cose da fare:
-                  - validazione password con JS
-            -->
-        
+          
     </div>
 </body>
 </html>

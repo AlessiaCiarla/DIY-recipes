@@ -111,9 +111,17 @@ body{
   .form .btn{width: 100%;}
 }
 
-.modificaPassword-form p{
+/*CSS per i messaggi di errore e successo per il cambio password*/
+.error{
   font-size: 14px;
   margin: 15px 0;
   display: inline-block;
-  color: #ffffff;
+  color: rgba(255, 0, 0, 0.719);
+
+}
+.success{
+  font-size: 14px;
+  margin: 15px 0;
+  display: inline-block;
+  color: rgba(0, 255, 0, 0.811);
 }
