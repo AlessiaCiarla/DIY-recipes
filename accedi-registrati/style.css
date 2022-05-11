@@ -130,3 +130,25 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   .form .user-input{width: 100%}
   .form .btn{width: 100%;}
 }
+/*CSS per i messaggi di errore e successo per login e registrazione account*/
+.error{
+  font-size: 14px;
+  margin: 15px 0;
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 0);
+  border: solid 5px rgba(255, 0, 0, 0.719);
+   
+}
+.success{
+  font-size: 14px;
+  margin: 15px 0;
+  display: inline-block;
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: rgb(0, 255, 0);
+  border: solid 5px rgba(0, 255, 0, 0.811);
+}

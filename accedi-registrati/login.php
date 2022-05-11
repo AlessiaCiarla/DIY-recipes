@@ -1,7 +1,7 @@
 <?php
      require_once('config.php'); // importo connessione al db
 
-     $username = $connessione->real_escape_string($_POST['username']); // fare il controllo dell'username esistente con JS
+     $username = $connessione->real_escape_string($_POST['username']);
      $password = $connessione->real_escape_string($_POST['password']);
 
      if($_SERVER["REQUEST_METHOD"] === "POST"){ //solo se arriviamo in questa pagina tramite POST
@@ -16,16 +16,21 @@
                     $_SESSION['loggato'] = true;
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['username'] = $row['username'];
-                    header("location: area_privata.php"); // il redirect su un'area provata dell'account oppure su home
+                    header("location: area_privata.php"); // il redirect su un'area privata dell'account oppure su home
+
                 }else{
-                    echo "La password non è corretta"; // Bisogna mandare un messaggio di errore in un altro modo
+                    header("Location: account.php?error=Password errata"); 
+                    exit();
                 }
             }else{
-                echo "Lo username inserito non esiste";
+                header("Location: account.php?error=Lo username inserito non esiste"); 
+	            exit();
             }
         }else{
-            echo "Errore durante il login";
+            header("Location: account.php?error=Errore durante il login"); 
+	        exit();
         }
+
         $connessione->close();
     }
 ?>

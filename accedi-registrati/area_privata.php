@@ -1,8 +1,7 @@
 <?php
-    // QUESTA PAGINA è IN COSTRUZIONE
     session_start();
     if(!isset( $_SESSION['loggato']) ||  $_SESSION['loggato'] !== true){
-        header("location: area_privata.php"); // oppure home
+        header("location: area_privata.php");
         exit;
     }
     // da inserire una nuova pagina con sessione attiva e nome username
@@ -25,7 +24,7 @@
     <!--file reset css-->
     <link rel="stylesheet" href="../Home/reset.css">
     <!--css-->
-    <link rel="stylesheet" href="area_privata.css">
+    <link rel="stylesheet" href="area_privata.css?ts=<?=time()?>&quot"> <!-- per problema cache browser, ricarica sempre il file css-->
     <!--Importo font api google (da scegliere)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>

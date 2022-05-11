@@ -116,12 +116,19 @@ body{
   font-size: 14px;
   margin: 15px 0;
   display: inline-block;
-  color: rgba(255, 0, 0, 0.719);
-
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: rgb(255, 0, 0);
+  border: solid 5px rgba(255, 0, 0, 0.719);
 }
 .success{
   font-size: 14px;
   margin: 15px 0;
   display: inline-block;
-  color: rgba(0, 255, 0, 0.811);
+  color: #fff;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  background-color: rgb(0, 255, 0);
+  border: solid 5px rgba(0, 255, 0, 0.811);
 }

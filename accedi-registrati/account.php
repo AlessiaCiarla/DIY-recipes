@@ -12,7 +12,7 @@
     <!--file reset css-->
     <link rel="stylesheet" href="../Home/reset.css">
     <!--css form-->
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?ts=<?=time()?>&quot"> <!-- per problema cache browser, così verrà sempre caricato il file css-->
     <!--Importo font api google (da scegliere)-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,8 +22,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js" charset="utf-8"></script>
   </head>
   <body>
-
-            <!------------------------------------------------------------------------navbar----------------------------------------------------------------------->
+  <!------------------------------------------------------------------------navbar----------------------------------------------------------------------->
        
             <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #ffffff;">
               <a class="navbar-brand" href="../Home/Index.html">
@@ -36,7 +35,7 @@
                   <div class="navbar-nav" id="info">
                       <a class="nav-item nav-link" href="#">Italiano</a>
                       <a class="nav-item nav-link" href="#">About</a>
-                      <a class="nav-item nav-link" href="../accedi-registrati/account.html">Accedi</a>
+                      <a class="nav-item nav-link" href="../accedi-registrati/account.php">Accedi</a>
                   </div>
               </div>
           </nav>
@@ -64,6 +63,15 @@
           
           <input class="user-input" type="text" name="username" id="username" placeholder="Username" required> 
           <input class="user-input" type="password" name="password" placeholder="Password" required>
+
+          <!--Messaggio errore in caso di login fallito oppure registrazione fallita-->
+          <?php if (isset($_GET['error'])) { ?>
+                <p class="error" id="f"><?php echo $_GET['error']; ?></p>
+          <?php } ?>
+          <!--Messaggio successo in caso di registrazione avvenuta-->
+          <?php if (isset($_GET['success'])) { ?>
+                <p class="success"><?php echo $_GET['success']; ?></p>
+          <?php } ?>
 
           <input class="btn" type="submit" name="" value="LOGIN">
           
