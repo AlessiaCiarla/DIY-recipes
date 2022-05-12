@@ -28,7 +28,7 @@
     <body background="https://img.freepik.com/free-vector/grunge-paper-background_1048-10026.jpg?w=2000">
 
         <!--navbar1-->
-        <nav class="navbar navbar-expand-lg navbar-light bg-opacity-75">
+        <nav class="navbar navbar-expand-lg navbar-light bg-opacity-75" id="prima">
             <a class="navbar-brand" href="#">
                 <img src="../images/logo.png" alt="logo" style="width:13rem;">
             </a>
@@ -39,12 +39,18 @@
                 <div class="navbar-nav" id="nav1">
                     <a class="nav-item nav-link" href="#">Italiano</a>
                     <a class="nav-item nav-link" href="#">Chi siamo</a>
-                    <a class="nav-item nav-link" href="../accedi-registrati/account.php">Accedi | Registrati</a>
+                    <a class="nav-item nav-link" href="../accedi-registrati/account.php" target="_self">
+                        <button id="login-btn" type="button" class="btn btn-success rounded-pill">
+                            Accedi | Registrati
+                        </button>
+                    </a>
+
+                    <!--<a class="nav-item nav-link" href="../accedi-registrati/account.php">Accedi | Registrati</a>-->
                 </div>
             </div>
         </nav>
         
-        <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light" id="sec">
             <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
                 <div class="navbar-nav" id="nav2">
                     <a class="nav-item nav-link" href="#"><strong>LA TUA RICETTA</strong></a>
