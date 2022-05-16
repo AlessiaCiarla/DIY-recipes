@@ -154,9 +154,34 @@ body{ /*per applicare in tutto il body*/
     padding-bottom: 10px;
 }
  
+#spazio_vuoto{
+    width:auto;
+    height:30px;
+    background: transparent;
+}
 
+#barra_finale{
+    height:60px;
+    background: #5c4024;;
+}
 
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
 
+#txt_finale {
+    padding-top: 20px;
+    width: 200px;
+    color: wheat;
+}
+
+#icona_finale{
+    padding-top: 10px;
+    width: 200px;
+}
 
 
 
