@@ -36,9 +36,9 @@ if (isset($_POST['attuale']) && isset($_POST['nuova'])
         //
         $sql = "SELECT password
                 FROM utenti WHERE 
-                username='$username' AND password='$attuale'";
+                username='$username'";// AND password='$attuale'";
         $result = mysqli_query($connessione, $sql);
-        
+        // if password verify
         $sql_2 = "UPDATE utenti
                     SET password='$nuova'
                     WHERE username='$username'";
