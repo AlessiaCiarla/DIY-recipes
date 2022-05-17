@@ -44,12 +44,11 @@
                             Accedi | Registrati
                         </button>
                     </a>
-
-                    <!--<a class="nav-item nav-link" href="../accedi-registrati/account.php">Accedi | Registrati</a>-->
                 </div>
             </div>
         </nav>
         
+        <!--navbar2-->
         <nav class="navbar navbar-expand-lg navbar-light" id="sec">
             <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
                 <div class="navbar-nav" id="nav2">
@@ -60,11 +59,79 @@
                 </div>
             </div>
         </nav>
+
+        <!--carosello-->
+        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-ride="carousel">
+            <div class="carousel-indicators">
+                <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active btn-dark"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="1" class="btn-dark"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="2" class="btn-dark"></li>
+                <li data-target="#carouselExampleCaptions" data-slide-to="3" class="btn-dark"></li>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active" id="img1">
+                    <img src="../images/foto1.jpg" class="d-block w-100" alt="La tua ricetta">
+                    <div class="carousel-caption d-md-block">
+                        <h4><strong>LA TUA RICETTA</strong></h4>
+                        <h6>CREA UN PIATTO PERSONALIZZATO CON I TUOI INGREDIENTI</h6>
+                    </div>
+                </div>
+                <div class="carousel-item" id="img2">
+                    <img src="../images/foto2.jpg" class="d-block w-100" alt="Ricette facili e veloci">
+                    <div class="carousel-caption d-md-block">
+                        <h3><strong>PANCAKES</strong></h3>
+                        <h6>RICETTE FACILI E VELOCI</h6>
+                    </div>
+                </div>
+                <div class="carousel-item" id="img3">
+                    <img src="../images/foto3.jpg" class="d-block w-100" alt="Ricette e festività">
+                    <div class="carousel-caption d-md-block">
+                        <h4><strong>COUSCOUS<br>
+                            CON VERDURE</strong></h4>
+                        <h6>RICETTE E FESTIVITÀ-ESTATE<h6>
+                    </div>
+                </div>
+                <div class="carousel-item" id="img4">
+                    <img src="../images/foto4.jpg" class="d-block w-100" alt="Idee fai da te">
+                    <div class="carousel-caption d-md-block">
+                        <h4><strong>RICICLA I TUOI BARATTOLI</strong></h4>
+                        <h6>IDEE FAI DA TE<h6>
+                    </div>
+                </div>
+            </div>
+
+            <a class="carousel-control-prev" href="#carouselExampleCaptions" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleCaptions" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <!--spazio vuoto-->
+        <div id="spazio_vuoto"></div>
+
+        <!--barra in basso conclusiva-->
+        <div class="container-fluid" id="barra_finale">
+            <div class="row">
+                <div class="block" id="txt_finale">
+                    <strong>DIY-Recipes 2022</strong>
+                </div>
+                <div class="block" id="icona_finale">
+                    <a href="https://github.com/AlessiaCiarla/DIY-recipes" target="_blank">
+                        <button type="button" class="btn btn-success rounded-pill bg-white border-dark">
+                            <img src="../images/github.png">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
     
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
-    
        
     </body>
 </html>

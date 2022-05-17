@@ -17,7 +17,7 @@ body{ /*per applicare in tutto il body*/
 
 #login-btn{
     border-color: #CD7F32;
-    background-color: #e5c19d;
+    background-color: #e0a76d;
     border-radius: 5px;
     color:rgb(92, 88, 88);
   }
@@ -38,26 +38,26 @@ body{ /*per applicare in tutto il body*/
     display:flex;
     background-color: #f1ece7;
     z-index: 1;
- }
+}
 
- #prima{
+#prima{
     border-bottom: 2px solid #CD7F32;
- }
+}
 
- #sec{
+#sec{
     border-bottom: 2px solid #CD7F32;
- }
+}
 
- @media (max-width: 990px) {
+@media (max-width: 990px) {
     #sec {
       border-bottom: none;
     }
-  }
+}
 
- #nav1{
+#nav1{
     position: absolute;
     left: 70%; 
-  }
+}
 
 #nav2{
     flex: 0.8;
@@ -71,27 +71,122 @@ body{ /*per applicare in tutto il body*/
     padding-left:20px;
     padding-right:20px;
     padding-top: 15px;
- }
- #nav1 .nav-item:last-child{
+}
+
+#nav1 .nav-item:last-child{
      padding-left: 20px;
- }
- @media (max-width: 990px) {
+}
+
+@media (max-width: 990px) {
    #nav1 .nav-item:not(:last-child) {
      border-right: none;
    }
- }
+}
 
- #nav2 .nav-item:not(:last-child) {
+#nav2 .nav-item:not(:last-child) {
     border-right: 1px solid #CD7F32;
     padding-left:10px;
     padding-right:70px;
- }
- #nav2 .nav-item:last-child{
+    padding-top: 2px;
+    padding-bottom: 2px;
+}
+
+#nav2 .nav-item:last-child{
      padding-left: 10px;
- }
- @media (max-width: 990px) {
+     padding-top: 2px;
+     padding-bottom: 2px;
+}
+
+@media (max-width: 990px) {
    #nav2 .nav-item:not(:last-child) {
      border-right: none;
    }
- }
+}
+
+.carousel-item{
+    height: 500px;
+}
+
+.carousel-indicators li{
+    background-color: rgb(94, 92, 92);
+}
+
+#img1, #img2, #img3, #img4{
+    opacity: 0.9; 
+}
+
+#img1 .carousel-caption{
+    color: rgb(26, 25, 25);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 550;
+    position: absolute;
+    padding-bottom: 30px;
+    padding-left: 250px;
+}
+
+#img2 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-left: 650px;
+    padding-bottom: 25px;
+}
+
+#img3 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-right: 415px;
+    padding-bottom: 25px;
+}
+
+#img4 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-bottom: 10px;
+}
  
+#spazio_vuoto{
+    width:auto;
+    height:30px;
+    background: transparent;
+}
+
+#barra_finale{
+    height:60px;
+    background: #5c4024;;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#txt_finale {
+    padding-top: 20px;
+    width: 200px;
+    color: wheat;
+}
+
+#icona_finale{
+    padding-top: 10px;
+    width: 200px;
+}
+
+
+
+
+
+
+
+
