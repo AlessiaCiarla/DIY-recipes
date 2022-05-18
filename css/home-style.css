@@ -1,0 +1,141 @@
+body{ /*per applicare in tutto il body*/
+    font-family: 'Lora', serif;
+    color:rgb(92, 88, 88);
+}
+/************carosello************/
+.carousel-item{
+    height: 500px;
+}
+
+.carousel-indicators li{
+    background-color: rgb(94, 92, 92);
+}
+
+#img1, #img2, #img3, #img4{
+    opacity: 0.9; 
+}
+
+#img1 .carousel-caption{
+    color: rgb(26, 25, 25);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 550;
+    position: absolute;
+    padding-bottom: 30px;
+    padding-left: 250px;
+}
+
+#img2 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-left: 650px;
+    padding-bottom: 25px;
+}
+
+#img3 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-right: 415px;
+    padding-bottom: 25px;
+}
+
+#img4 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-bottom: 10px;
+}
+/**********************************/
+.carousel-item{
+    height: 75.5vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size:cover;
+}
+.carousel-caption p{
+    font-size:18px;
+}
+
+#img1, #img2, #img3, #img4{
+    opacity: 0.9; 
+}
+
+#img1 .carousel-caption{
+    color: rgb(26, 25, 25);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 550;
+    position: absolute;
+    padding-bottom: 30px;
+    padding-left: 250px;
+}
+
+#img2 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-left: 650px;
+    padding-bottom: 25px;
+}
+
+#img3 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-right: 415px;
+    padding-bottom: 25px;
+}
+
+#img4 .carousel-caption{
+    color: rgb(43, 42, 42);
+    text-align:center;
+    font-size: 18px;
+    font-weight: 300;
+    position:absolute;
+    padding-bottom: 10px;
+}
+
+/**fine**/
+#spazio_vuoto{
+    width:auto;
+    height:30px;
+    background: transparent;
+}
+
+#barra_finale{
+    height:90px;
+    background: #5c4024;;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#txt_finale {
+    padding-top: 20px;
+    width: 200px;
+    color: wheat;
+}
+
+#icona_finale .btn{
+    width: 4rem;
+    position: relative;
+    left: 95%;
+    top:-30px;
+}

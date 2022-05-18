@@ -20,13 +20,13 @@ if (isset($_POST['attuale']) && isset($_POST['nuova'])
 	$riscrivi = validate($_POST['riscrivi']);
     
     if(empty($attuale)){
-      header("Location: area_privata.php?error=Scrivere la password attuale");
+      header("Location: ../html-php/area_privata.php?error=Scrivere la password attuale");
 	  exit();
     }else if(empty($nuova)){
-      header("Location: area_privata.php?error=Scrivere la nuova password");
+      header("Location: ../html-php/area_privata.php?error=Scrivere la nuova password");
 	  exit();
     }else if($nuova !== $riscrivi){
-      header("Location: area_privata.php?error=Le pasword non combaciano"); 
+      header("Location: ../html-php/area_privata.php?error=Le pasword non combaciano"); 
 	  exit();
     }else{
     	// hashing delle password
@@ -45,17 +45,17 @@ if (isset($_POST['attuale']) && isset($_POST['nuova'])
 
         mysqli_query($connessione, $sql_2);
 
-        header('Location: area_privata.php?success=Cambio password avvenuto con successo'); 
+        header('Location: ../html-php/area_privata.php?success=Cambio password avvenuto con successo'); 
 
         exit(); 
     }
 }else{
-	header("Location: area_privata.php");
+	header("Location: ../html-php/area_privata.php");
 	exit();
 }
 
 }else{
-     header("Location: Index.html");
+     header("Location: ../index.php");
      exit();
 }
 ?>

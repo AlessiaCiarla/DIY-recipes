@@ -2,6 +2,7 @@
 
 body{ 
   background: #635752;
+
   font-family: 'Lora', serif;}
 h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
 .big-text{font-size: 70px; font-weight: bold;}
@@ -16,32 +17,6 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
     display: inline-block;
     border-radius: 4px;
 }
-/*Navbar*/
-/*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
-@media (max-width:990px){
-  .big-text{font-size: 40px;} 
-  #info{display:contents;}
-}
-.navbar{
-  width: 100%;
-  position:relative;
-  display:flex;
-  z-index: 1;
-}
-#info{
-  position: absolute;
-  left: 80%;    
-}
-/*
-.navbar{
-  top:0px;
-  position: absolute;
-}
-#navbarNavAltMarkup2{
-  top:60px;
-  position: relative;
-}
-*/
 /*stile del FORM*/
 .container{
   height: 100vh;
@@ -49,6 +24,7 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   justify-content: center;
   align-items: center;
   background: #635752;
+  background-image: url(../images/foto6.jpeg); /*sfondo per il form*/
   font-family: 'Lora', serif;
 }
 .form{
@@ -56,7 +32,7 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   position: absolute;
   width: 320px;
   text-align: center;
-  top:150px;
+  top:100px;
 }
 .form i{/*omino*/
   z-index: 1;
@@ -86,15 +62,6 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   border-right: solid 8px #ffffff;
   box-shadow: 0 0 100px rgba(71,63,60,0.8);
 }
-/*Ricordami e Hai dimenticato password
-.form .options-01{
-  margin-bottom: 25px;
-}
-.form .options-01 input{
-  width: 15px;
-  height: 15px;
-  margin-right: 5px;
-}*/
 /*bottone*/
 .form .btn{
   outline: none;
@@ -115,14 +82,13 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   border-right: solid 8px rgba(255, 255, 255, 0.5);
   box-shadow: 0 0 100px rgba(250, 250, 250, 0.8);
 }
-
 .form .options-02{
-  color: #bbb;
+  color:  rgb(83, 78, 78);/*#bbb;*/
   font-size: 14px;
   margin-top: 30px;
 }
 .form .options-02 a{
-  color: #bbb; /*Accedi*/
+  color: rgb(83, 78, 78); /*Accedi*/
 }
 /*CSS responsive per schemi piccoli */
 @media screen and (max-width: 500px){

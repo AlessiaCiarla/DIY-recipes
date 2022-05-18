@@ -10,10 +10,10 @@
     $sql = "INSERT INTO utenti (email, username, password) VALUES ('$email', '$username', '$hashed_password')";
 
     if($connessione->query($sql) === true){
-        header("Location: account.php?success=Registrazione avvenuta con successo"); 
+        header("Location: ../index.php?success=Registrazione avvenuta con successo"); 
 	    exit();
     }else{
-        header("Location: account.php?error=Registrazione fallita"); 
+        header("Location: ../index.php?error=Registrazione fallita"); 
 	    exit();
     } 
 ?>

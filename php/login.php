@@ -16,18 +16,18 @@
                     $_SESSION['loggato'] = true;
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['username'] = $row['username'];
-                    header("location: area_privata.php"); // il redirect su un'area privata dell'account oppure su home
+                    header("location: ../html/home.html");//../html-php/area_privata.php"); 
 
                 }else{
-                    header("Location: account.php?error=Password errata"); 
+                    header("Location: ../index.php?error=Password errata"); 
                     exit();
                 }
             }else{
-                header("Location: account.php?error=Lo username inserito non esiste"); 
+                header("Location: ../index.php?error=Lo username inserito non esiste"); 
 	            exit();
             }
         }else{
-            header("Location: account.php?error=Errore durante il login"); 
+            header("Location: ../index.php?error=Errore durante il login"); 
 	        exit();
         }
 
