@@ -3,17 +3,34 @@ body{
     color:rgb(92, 88, 88);
 }
 
-#barra_titolo{
-    width: auto;
-    height: auto;
-}
-
 /*titolo grande*/
 #titolo_grande{
+    width: 1340px;
     padding-top: 50px;
     padding-left: 480px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(172, 168, 168);
 }
 
+/*sottotitolo*/
+#sottotitolo{
+    padding-top: 15px;
+    padding-left: 620px;
+}
+
+#paragrafo{
+    font-size: 17px;
+    width: 1200px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#cards{
+    padding-top: 30px;
+    background-color: #F5DEB3;
+    height: 845px;
+    width: 1300px;
+}
 
 /**fine**/
 #spazio_vuoto{
