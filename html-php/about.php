@@ -35,7 +35,7 @@
                     <div class="card" id="card1">
                         <div class="foto-profilo">
                             <div class="circle"></div>
-                            <img src="../images/pamela.png" alt="foto profilo pamela" id="foto_pam">
+                            <img src="../images/pamela4.png" alt="foto profilo pamela" id="foto_pam">
                         </div>
                         <div class="info">
                             <h1 class="title">Pamela Marinelli</h1>
