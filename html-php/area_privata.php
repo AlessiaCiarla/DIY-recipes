@@ -17,6 +17,8 @@
     <link rel="stylesheet" href="../css/reset.css">
     <!-- importo lo head per la navbar, con lo bootstrap -->
     <?php include 'head_navbar.php';?>
+    <!--importo lo head del footer-->
+    <?php include 'head_footer.php';?>
     <!--css area privata-->
     <link rel="stylesheet" href="../css/area_privata_style.css?ts=<?=time()?>&quot">
 </head>
@@ -47,5 +49,6 @@
             <a href="../php/logout.php"><input class="btn" type="submit" name="" value="LOGOUT"></a> 
         </div>
     </div>
+    <?php include 'footer.php';?>
 </body>
 </html>

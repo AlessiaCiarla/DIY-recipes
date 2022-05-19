@@ -25,12 +25,9 @@ body{
     display:flex;
     justify-content: center;
     align-items: center;
-    background:#635752;/*#8c746b;/*#a79180;/*#ffdcba;/* #923d55;*/
+    background:#635752;
     font-family: 'Lora', serif;
-    /*z-index:0;*/
-    /*position:relative;*/
     text-align: center;
-    /*top:150px;*/
 }
 .container h1{
     top:10rem;

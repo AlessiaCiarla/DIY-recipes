@@ -11,7 +11,7 @@
     <!--omino account-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
     
-     <!--Importo font api google-->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!--Importo font api google-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">

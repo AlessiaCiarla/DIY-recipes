@@ -1,6 +1,6 @@
 <!--barra in basso conclusiva-->
 <div class="container-fluid" id="barra_finale">
-            <div class="row">
+            <div class="row" id="row_footer">
                 <div class="block" id="txt_finale">
                     <strong>DIY-Recipes 2022</strong>
                 </div>
