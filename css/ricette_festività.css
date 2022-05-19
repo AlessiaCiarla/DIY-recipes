@@ -1,0 +1,48 @@
+body{ 
+    font-family: 'Lora', serif;
+    color:rgb(92, 88, 88);
+}
+
+#barra_titolo{
+    width: auto;
+    height: auto;
+}
+
+/*titolo grande*/
+#titolo_grande{
+    padding-top: 50px;
+    padding-left: 480px;
+}
+
+
+/**fine**/
+#spazio_vuoto{
+    width:auto;
+    height:30px;
+    background: transparent;
+}
+
+#barra_finale{
+    height:90px;
+    background: #5c4024;;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#txt_finale {
+    padding-top: 20px;
+    width: 200px;
+    color: wheat;
+}
+
+#icona_finale .btn{
+    width: 4rem;
+    position: relative;
+    left: 95%;
+    top:-30px;
+}
