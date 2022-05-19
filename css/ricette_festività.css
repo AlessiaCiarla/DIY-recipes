@@ -1,0 +1,65 @@
+body{ 
+    font-family: 'Lora', serif;
+    color:rgb(92, 88, 88);
+}
+
+/*titolo grande*/
+#titolo_grande{
+    width: 1340px;
+    padding-top: 50px;
+    padding-left: 480px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(172, 168, 168);
+}
+
+/*sottotitolo*/
+#sottotitolo{
+    padding-top: 15px;
+    padding-left: 620px;
+}
+
+#paragrafo{
+    font-size: 17px;
+    width: 1200px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#cards{
+    padding-top: 30px;
+    background-color: #F5DEB3;
+    height: 845px;
+    width: 1300px;
+}
+
+/**fine**/
+#spazio_vuoto{
+    width:auto;
+    height:30px;
+    background: transparent;
+}
+
+#barra_finale{
+    height:90px;
+    background: #5c4024;;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#txt_finale {
+    padding-top: 20px;
+    width: 200px;
+    color: wheat;
+}
+
+#icona_finale .btn{
+    width: 4rem;
+    position: relative;
+    left: 95%;
+    top:-30px;
+}
