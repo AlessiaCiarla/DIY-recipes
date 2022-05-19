@@ -1,8 +1,8 @@
 /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');*/
 
 body{ 
-  background: #635752;
-
+  /*background: #635752;*/
+  background-image: url(../images/foto6.jpeg);
   font-family: 'Lora', serif;}
 h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
 .big-text{font-size: 70px; font-weight: bold;}
@@ -23,8 +23,8 @@ h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #635752;
-  background-image: url(../images/foto6.jpeg); /*sfondo per il form*/
+  background: #63575265; /*da togliere se non piace*/
+  /*background-image: url(../images/foto6.jpeg); /*sfondo per il form*/
   font-family: 'Lora', serif;
 }
 .form{

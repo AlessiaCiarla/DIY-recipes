@@ -22,7 +22,7 @@
             <div class="navbar-nav" id="nav2">
                 <a class="nav-item nav-link" href="#"><strong>LA TUA RICETTA</strong></a>
                 <a class="nav-item nav-link" href="#"><strong>RICETTE FACILI E VELOCI</strong></a>
-                <a class="nav-item nav-link" href="#"><strong>RICETTE E FESTIVITÀ</strong></a>
+                <a class="nav-item nav-link" href="../html/ricette_festività.html"><strong>RICETTE E FESTIVITÀ</strong></a>
                 <a class="nav-item nav-link" href="#"><strong>IDEE FAI DA TE</strong></a>
             </div>
         </div>
