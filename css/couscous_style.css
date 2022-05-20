@@ -7,7 +7,7 @@ body{
 #titolo_grande{
     width: 1330px;
     padding-top: 50px;
-    padding-left: 480px;
+    padding-left: 440px;
     padding-bottom: 12px;
     border-bottom: 1px solid rgb(172, 168, 168);
 }
@@ -15,7 +15,7 @@ body{
 /*sottotitolo*/
 #sottotitolo{
     padding-top: 15px;
-    padding-left: 620px;
+    padding-left: 540px;
 }
 
 #paragrafo{
@@ -25,32 +25,30 @@ body{
     line-height: 30px;
 }
 
-#cards{
-    padding-left: 30px;
-    padding-top: 30px;
+#contenitore{
+    height: 250px;
     background-color: wheat;
-    height: 890px;
-    width: auto;
 }
 
-#card1, #card2, #card3, #card4{
-    width: 600px;
-    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
-    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
-    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+#riga{
+    padding-top: 30px;
 }
 
-#card1:hover, #card2:hover, #card3:hover, #card4:hover{
-    transform: scale(1.1);
+#card1{
+    width: 500px !important;
+    height: 200px !important;
+    object-fit: cover;
+    overflow-y: hidden;
 }
 
-#card1, #card2, #card3, #card4 {
-    transition: transform 0.2s ease;
+#card2{
+    background-color: rgb(96, 97, 97);
 }
 
-#btn1{
-    border: none;
+#ul > li{
+    background-color: rgb(219, 203, 170);
 }
+  
 
 /**fine**/
 #spazio_vuoto{
@@ -83,3 +81,11 @@ body{
     left: 95%;
     top:-30px;
 }
+
+
+
+
+
+
+
+
