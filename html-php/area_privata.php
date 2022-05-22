@@ -30,7 +30,6 @@
         <h1>Area privata di <?php echo " " . $_SESSION['username']?></h1>
         <div class="form">
             <form class="modificaPassword-form" action="../php/cambia_password.php" method="POST"> 
-                <input class="user-input" type="password" name="attuale" id="attuale" placeholder="Password attuale" required> 
                 <input class="user-input" type="password" name="nuova" id="nuova" placeholder="Nuova password" required> 
                 <input class="user-input" type="password" name="riscrivi" id="riscrivi" placeholder="Riscrivi password" required> 
                 

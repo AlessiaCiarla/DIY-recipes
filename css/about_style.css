@@ -1,8 +1,3 @@
-/* * {
-margin: 0;
-padding: 0;
-box-sizing: border-box;
-}*/
 body{  background-image: url(../images/foto6.jpeg);}
 
 .container {
@@ -12,14 +7,13 @@ body{  background-image: url(../images/foto6.jpeg);}
     justify-content: center;
     perspective: 1000px;
     text-align:left;
-}/*
-.col{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    /*
+    position: absolute;
+    z-index: 0;
+    left:10%;
+    top:11rem;
+    /**/
 }
-*/
 .card {
     transform-style: preserve-3d;
     min-height: 80vh;
@@ -87,7 +81,6 @@ body{  background-image: url(../images/foto6.jpeg);}
     border-radius: 3px;
     background: radial-gradient(circle farthest-corner at 35% 90%, #fec564, transparent 50%), radial-gradient(circle farthest-corner at 0 140%, #fec564, transparent 50%), radial-gradient(ellipse farthest-corner at 0 -25%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 20% -50%, #5258cf, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 0, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 60% -20%, #893dc2, transparent 50%), radial-gradient(ellipse farthest-corner at 100% 100%, #d9317a, transparent), linear-gradient(#6559ca, #bc318f 30%, #e33f5f 50%, #f77638 70%, #fec66d 100%);
 }
-
 #github:hover{
   box-shadow: 0 0 100px  rgba(0, 0, 0, 0.8);
 }
@@ -98,7 +91,12 @@ body{  background-image: url(../images/foto6.jpeg);}
     box-shadow: 0 0 100px  rgba(8, 83, 156, 0.8);
 }
 @media screen and (max-width: 990px){
-    .container{width: 95%;}
+    .container{
+        width: 95%;
+        /*left:2%;
+        top:10rem;*/
+    
+    }
     .card{width: 100%;}
     .card .foto-profilo{width: 100%;}
     .card .circle {

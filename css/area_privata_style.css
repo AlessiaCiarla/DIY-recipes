@@ -1,31 +1,22 @@
 
 body{ 
-    background:#635752;/*#a79180;/*#ffdcba; /*#923d55;*/
+   /* background:#635752;*/
+    background-image: url(../images/foto6.jpeg);
     font-family: 'Lora', serif;}
   h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
-  .big-text{font-size: 70px; font-weight: bold;}
-  .med-text{font-size: 40px;}
-  .normal-text{font-size: 20px;}
-  .small-text{font-size: 14px;}
-  .intro-text{text-transform: uppercase; font-size:20px;font-weight:bold;}
-  .button{
-      padding:18px 28px;
-      background: #316bff;
-      color:#fff;
-      display: inline-block;
-      border-radius: 4px;
-  }
+
   /*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/
   @media (max-width:990px){
     .big-text{font-size: 40px;} 
   }
 /*Container*/
 .container{
-    height: 100vh;
+    height: 80vh;
+    width: 70vh;
     display:flex;
     justify-content: center;
     align-items: center;
-    background:#635752;
+    background:#63575286;
     font-family: 'Lora', serif;
     text-align: center;
 }
@@ -36,6 +27,7 @@ body{
     font-size:28px;
 }
 .form{
+  /*caratteristiche che fanno sovrapporre la navbar al form*/
   z-index: 0;
   position: absolute;
   top:15rem;

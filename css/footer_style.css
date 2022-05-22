@@ -1,6 +1,9 @@
 #barra_finale{
     height:90px;
-    background: #5c4024;;
+    background: #5c4024;
+    /*position:absolute;
+    top:900px;
+    z-index: 0;*/
 }
 #row_footer {
     width: 100%;
@@ -8,16 +11,18 @@
     flex-direction: row;
     justify-content: left;
 }
-
 #txt_finale {
     padding-top: 20px;
     width: 200px;
     color: wheat;
 }
-
 #icona_finale .btn{
     width: 4rem;
     position: relative;
     left: 95%;
     top:-30px;
 }
+/*
+@media screen and (max-width: 600px){
+    #barra_finale{top: 80rem;}/*1300px}
+}*/

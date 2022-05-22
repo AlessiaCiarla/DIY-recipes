@@ -3,4 +3,4 @@
 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">          
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
 <!--Importo il file css del footer-->
-<link rel="stylesheet" href="../css/footer_style.css">
+<link rel="stylesheet" href="../css/footer_style.css?ts=<?=time()?>&quot">
