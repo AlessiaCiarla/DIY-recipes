@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+        <!-- Bootstrap CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+        <!--Importo reset-->
+        <link rel="stylesheet" href="../css/reset.css">
+
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">          
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <!--Importo il file css della navbar-->
+        <link rel="stylesheet" href="../css/navbar_style.css">
+        <!--Importare poi il file css della pag idee-->
+        <link rel="stylesheet" href="../css/idee_style.css">
+        <!--omino account-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+        <!--Importo font api google-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap" rel="stylesheet">
+    
+        <title>Idee fai da te - DIY-recipes</title>
+    </head>
+
+    <body background="https://img.freepik.com/free-vector/grunge-paper-background_1048-10026.jpg?w=2000">
+
+        <!--navbar1-->
+        <nav class="navbar navbar-expand-lg navbar-light bg-opacity-75" id="prima">
+            <a class="navbar-brand" href="home.html">
+                <img src="../images/logo.png" alt="logo" style="width:13rem;">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-toggle" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="nav1">
+                    <a class="nav-item nav-link" href="#">Italiano</a>
+                    <a class="nav-item nav-link" href="../html-php/about.php">Chi siamo</a>
+                    <a class="nav-item nav-link" href="../html-php/area_privata.php" target="_self">
+                        <i class="fas fa-user-circle"></i> <!--omino account-->
+                        </a>
+                    </a>
+                </div>
+            </div>
+        </nav> 
+        <!--navbar2-->
+        <nav class="navbar navbar-expand-lg navbar-light" id="sec">
+            <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
+                <div class="navbar-nav" id="nav2">
+                    <a class="nav-item nav-link" href="#"><strong>LA TUA RICETTA</strong></a>
+                    <a class="nav-item nav-link" href="#"><strong>RICETTE FACILI E VELOCI</strong></a>
+                    <a class="nav-item nav-link" href="#"><strong>RICETTE E FESTIVITÀ</strong></a>
+                    <a class="nav-item nav-link" href="#"><strong>IDEE FAI DA TE</strong></a>
+                </div>
+            </div>
+        </nav>
+
+        <!--titolo grande-->
+        <div class="container-fluid" id="barra_titolo1">
+            <div class="row">
+                <div class="block">
+                    <h1 id="titolo_grande" style="color:#B20000;font-size:60px;font-family: Dancing Script, cursive;">Idee fai da te</h1> 
+                </div>
+            </div>
+        </div>
+
+
+        <!--paragrafo-->
+        <div class="container-fluid" id="paragrafo">
+            <p><strong>In questa sezione ci sono dei consigli per la casa e la cucina, sempre utili e alla portata
+                di tutti, che vengono aggiornati frequentemente. Il consiglio di oggi riguarda il riciclo dei barattoli
+                di vetro.<br>
+                Quante volte capita di non avere una scatola in cui sistemare qualche piccolo utensile da cucina, 
+                oppure non troviamo al volo un contenitore delle dimensioni adatte per mettere via porzioni extra di 
+                cibo preparato. I barattoli di vetro possono tornare utilissimi in tutti questi casi, e poi diventare 
+                - all'occorrenza -anche vasi per fiori, decorazioni da appendere, contenitori per leccornie da 
+                esporre e non solo.Lasciatevi ispirare dalle idee di seguito, per usare i barattoli in dispensa o come decorazioni.
+            </strong></p>
+        </div>
+
+        <!--spazio vuoto-->
+        <div id="spazio_vuoto"></div>
+
+        <!--card consigli-->
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="cards">
+            <div class="row">
+                <div class="col">
+                    <div class="card" id="card1">
+                        <img src="../images/barattoli1.jpg" class="card-img-top" style="height: 350px;">
+                        <div class="card-body" style="background-color: beige;">
+                            <h5 class="card-title" style="color:#B20000;font-size:20px;font-family: Lora, sans serif;">Sono i migliori alleati per una dispensa ordinata, e se
+                                acquistiamo legumi e altri prodotti sfusi, sono anche un'alternativa green
+                                da preferire
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="card2">
+                        <img src="../images/barattoli2.jpg" class="card-img-top" style="height: 350px;">
+                        <div class="card-body" style="background-color: beige;">
+                            <h5 class="card-title" style="color:#B20000;font-size:20px;font-family: Lora, sans serif;">
+                                Possono diventare bellissimi barattoli per biscotti, caramelle, dolcetti di
+                                 ogni tipo<br>
+                                 <br>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="card3">
+                        <img src="../images/barattoli3.jpg" class="card-img-top" style="height: 350px;">
+                        <div class="card-body" style="background-color: beige;">
+                            <h5 class="card-title" style="color:#B20000;font-size:20px;font-family: Lora, sans serif;">
+                                Non solo cibo: possiamo usarli per far ordine tra tutti gli accessori da cucina, 
+                                come pirottini per muffin, ma anche mollette, elastici e molto altro.
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row" id="sec_riga">
+                <div class="col">
+                    <div class="card" id="card4">
+                        <img src="../images/barattoli4.jpg" class="card-img-top" style="height: 350px;">
+                        <div class="card-body" style="background-color: beige;">
+                            <h5 class="card-title" style="color:#B20000;font-size:20px;font-family: Lora, sans serif;">
+                                Un barattolo diventa un perfetto portaoggetti per trasportare posate, tovaglioli 
+                                e tutto ciò che serve quando mangiamo all'aperto
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="card5">
+                        <img src="../images/barattoli5.jpg" class="card-img-top" style="height: 350px;">
+                        <div class="card-body" style="background-color: beige;">
+                            <h5 class="card-title" style="color:#B20000;font-size:20px;font-family: Lora, sans serif;">
+                                Se volete coltivare piante aromatiche, improvvisare un vaso di fiori o un centrotavola
+                                potete provare con i barattoli di vetro
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card" id="card6">
+                        <img src="../images/barattoli6.jpg" class="card-img-top" style="height: 350px;">
+                        <div class="card-body" style="background-color: beige;">
+                            <h5 class="card-title" style="color:#B20000;font-size:20px;font-family: Lora, sans serif;">Si 
+                                possono dipingere, con una vernice effetto matte o metallico, per essere utilizzati come decorazione
+                                per la casa
+                                <br>
+                                <br>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--spazio vuoto-->
+        <div id="spazio_vuoto"></div>
+
+        <!--barra in basso conclusiva-->
+        <div class="container-fluid" id="barra_finale">
+            <div class="row">
+                <div class="block" id="txt_finale">
+                    <strong>DIY-Recipes 2022</strong>
+                </div>
+                <div class="block" id="icona_finale">
+                    <a href="https://github.com/AlessiaCiarla/DIY-recipes" target="_blank" >
+                        <button type="button" class="btn rounded-pill bg-white border-black">
+                            <img src="../images/github.png" style="width:1rem;">
+                        </button>
+                    </a>
+                </div>
+            </div>
+        </div>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    </body>
+</html>

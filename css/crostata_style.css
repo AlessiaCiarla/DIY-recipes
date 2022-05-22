@@ -78,6 +78,12 @@ h2, p {
     background-color: rgb(231, 214, 183);
     margin-left: 100px;
 }
+
+#sotto_sezioni_procedimento{
+    width: 1330px;
+    padding-left: 100px;
+    padding-bottom: 12px;
+}
   
 
 /**fine**/

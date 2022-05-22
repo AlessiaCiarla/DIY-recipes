@@ -1,0 +1,77 @@
+body{ 
+    font-family: 'Lora', serif;
+    color:rgb(92, 88, 88);
+}
+
+/*titolo grande*/
+#titolo_grande{
+    width: 1330px;
+    padding-top: 50px;
+    padding-left: 480px;
+    padding-bottom: 12px;
+    border-bottom: 1px solid rgb(172, 168, 168);
+}
+
+#paragrafo{
+    font-size: 17px;
+    width: 1000px;
+    text-align: center;
+    line-height: 30px;
+}
+
+#cards{
+    padding-left: 30px;
+    padding-top: 30px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+    background-color: wheat;
+    height: auto;
+    width: auto;
+}
+
+#sec_riga{
+    padding-top: 30px;
+}
+
+#card1, #card2, #card3, #card4, #card5, #card6{
+    -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+    box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
+}
+
+.card-img-top{
+    object-fit: cover;
+}
+
+
+/**fine**/
+#spazio_vuoto{
+    width:auto;
+    height:30px;
+    background: transparent;
+}
+
+#barra_finale{
+    height:90px;
+    background: #5c4024;;
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#txt_finale {
+    padding-top: 20px;
+    width: 200px;
+    color: wheat;
+}
+
+#icona_finale .btn{
+    width: 4rem;
+    position: relative;
+    left: 95%;
+    top:-30px;
+}
