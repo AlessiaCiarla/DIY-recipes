@@ -60,7 +60,7 @@ body{
   width: 320px;
   height: 55px;
   background: #f9dabb;
-  color: #fff;
+  color: rgb(73, 68, 68);
   font-size: 18px;
   letter-spacing: 1px;
   border-radius: 5px;
@@ -69,7 +69,7 @@ body{
   transition-property: border-left, border-right, box-shadow;
 }
 #conferma{
-  background: #a89d9a;
+  background: #968f8e;
   margin-bottom: 20px;
   position:relative;
 }

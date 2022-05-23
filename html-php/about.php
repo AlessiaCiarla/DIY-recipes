@@ -60,7 +60,7 @@
                             </div>
                             <div class="info">
                                 <h1 class="title">Alessia Ciarla</h1>
-                                <h3>Studentessa di Informatica alla Sapienza di Roma, appassionata di trekking, libri e serie tv</h3>
+                                <h3>Studentessa di Informatica alla Sapienza di Roma, appassionata di sport, libri e serie tv</h3>
                                 <div class="sizes">
                                     <!--contatti social-->
                                     <a href="https://www.instagram.com/alessiaciarla/" class="fab fa-instagram" target="_blank" id="instagram"></a>

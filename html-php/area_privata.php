@@ -27,7 +27,7 @@
     
     <!--Inizio area privata con modifica password -->
     <div class="container">
-        <h1>Area privata di <?php echo " " . $_SESSION['username']?></h1>
+        <h1><strong>Area privata di <?php echo " " . $_SESSION['username']?></strong></h1>
         <div class="form">
             <form class="modificaPassword-form" action="../php/cambia_password.php" method="POST"> 
                 <input class="user-input" type="password" name="nuova" id="nuova" placeholder="Nuova password" required> 
