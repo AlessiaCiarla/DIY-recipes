@@ -54,14 +54,17 @@
         <nav class="navbar navbar-expand-lg navbar-light" id="sec">
             <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
                 <div class="navbar-nav" id="nav2">
-                    <a class="nav-item nav-link" href="#"><strong>LA TUA RICETTA</strong></a>
-                    <a class="nav-item nav-link" href="#"><strong>RICETTE FACILI E VELOCI</strong></a>
-                    <a class="nav-item nav-link" href="#"><strong>RICETTE E FESTIVITÀ</strong></a>
-                    <a class="nav-item nav-link" href="#"><strong>IDEE FAI DA TE</strong></a>
+                    <a class="nav-item nav-link" href="tua_ricetta.html"><strong>LA TUA RICETTA</strong></a>
+                    <a class="nav-item nav-link" href="ricette_veloci.html"><strong>RICETTE FACILI E VELOCI</strong></a>
+                    <a class="nav-item nav-link" href="ricette_festività.html"><strong>RICETTE E FESTIVITÀ</strong></a>
+                    <a class="nav-item nav-link" href="idee.html"><strong>IDEE FAI DA TE</strong></a>
                 </div>
             </div>
         </nav>
 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+           
         <!--titolo grande-->
         <div class="container-fluid" id="barra_titolo1">
             <div class="row">
@@ -85,22 +88,22 @@
 
         <!--la tua ricetta-->
         <div class="container-fluid" id="sfondo">
-            <div class="container pb-5" id="riquadro">
+            <div class="container pb-5" id="riquadro" action="php/tua_ricetta.php" method="POST">
                 <!--inserisci i tuoi ingredienti-->
                 <div class="container-fluid">
                     <h1 style="color:#B20000;font-size:20px;font-family: Lora, sans serif;">INSERISCI I TUOI INGREDIENTI</h1> 
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput" class="form-label">Ingrediente 1</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="es: pomodoro">
+                    <input type="text" class="form-control" id="formGroupExampleInput" name="ing1" placeholder="es: pomodoro">
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Ingrediente 2</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="es: tonno">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" name="ing2" placeholder="es: tonno">
                 </div>
                 <div class="mb-3">
                     <label for="formGroupExampleInput2" class="form-label">Ingrediente 3</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="es: olio">
+                    <input type="text" class="form-control" id="formGroupExampleInput2" name="ing3" placeholder="es: olio">
                 </div>
                 <br>
                 <br>
@@ -111,7 +114,7 @@
                 </div>
                 <div class="col-12">
                     <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                    <select class="form-select" id="inlineFormSelectPref">
+                    <select class="form-select" id="inlineFormSelectPref" name="numero_persone">
                       <option selected>..</option>
                       <option value="1">1</option>
                       <option value="2">2</option>
@@ -128,7 +131,7 @@
                 </div>
                 <div class="col-12">
                     <label class="visually-hidden" for="inlineFormSelectPref">Preference</label>
-                    <select class="form-select" id="inlineFormSelectPref">
+                    <select class="form-select" id="inlineFormSelectPref" name="categoria">
                       <option selected>..</option>
                       <option value="1">Antipasti</option>
                       <option value="2">Primi</option>

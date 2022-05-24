@@ -16,7 +16,7 @@
                     $_SESSION['loggato'] = true;
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['username'] = $row['username'];
-                    header("location: ../html/home.html");//../html-php/area_privata.php"); 
+                    header("location: ../html/home.html"); 
 
                 }else{
                     header("Location: ../index.php?error=Password errata"); 

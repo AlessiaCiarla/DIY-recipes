@@ -20,10 +20,10 @@
         <nav class="navbar navbar-expand-lg navbar-light" id="sec">
         <div class="collapse navbar-collapse navbar-toggle" id="navbarNavAltMarkup">
             <div class="navbar-nav" id="nav2">
-                <a class="nav-item nav-link" href="../hmtl/tua_ricetta.html"><strong>LA TUA RICETTA</strong></a>
-                <a class="nav-item nav-link" href="../hmtl/ricette_veloci.html"><strong>RICETTE FACILI E VELOCI</strong></a>
+                <a class="nav-item nav-link" href="../html/tua_ricetta.html"><strong>LA TUA RICETTA</strong></a>
+                <a class="nav-item nav-link" href="../html/ricette_veloci.html"><strong>RICETTE FACILI E VELOCI</strong></a>
                 <a class="nav-item nav-link" href="../html/ricette_festività.html"><strong>RICETTE E FESTIVITÀ</strong></a>
-                <a class="nav-item nav-link" href="../hmtl/idee.html"><strong>IDEE FAI DA TE</strong></a>
+                <a class="nav-item nav-link" href="../html/idee.html"><strong>IDEE FAI DA TE</strong></a>
             </div>
         </div>
     </nav>

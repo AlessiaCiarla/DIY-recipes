@@ -23,6 +23,8 @@ body{
     width: 1200px;
     text-align: center;
     line-height: 30px;
+    height: auto;
+    width: auto;
 }
 
 #sfondo{
@@ -80,3 +82,19 @@ body{
     left: 95%;
     top:-30px;
 }
+
+
+@media screen and (max-width: 990px){
+    /*correggere dimensione container*/
+    #barra_titolo1{
+        height: auto;
+        width: 90%;
+       
+    }
+    #titolo_grande{
+        top:1rem;
+        position:relative;
+        padding: 20px;
+        left:10%;
+    }
+  }
