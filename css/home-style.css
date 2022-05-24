@@ -15,6 +15,9 @@ body{ /*per applicare in tutto il body*/
     opacity: 0.9; 
 }
 
+#img1 img, #img2 img, #img3 img, #img4 img{
+    width: 100%;
+}
 #img1 .carousel-caption{
     color: rgb(26, 25, 25);
     text-align:center;
@@ -65,49 +68,6 @@ body{ /*per applicare in tutto il body*/
     font-size:18px;
 }
 
-#img1, #img2, #img3, #img4{
-    opacity: 0.9; 
-}
-
-#img1 .carousel-caption{
-    color: rgb(26, 25, 25);
-    text-align:center;
-    font-size: 18px;
-    font-weight: 550;
-    position: absolute;
-    padding-bottom: 30px;
-    padding-left: 250px;
-}
-
-#img2 .carousel-caption{
-    color: rgb(43, 42, 42);
-    text-align:center;
-    font-size: 18px;
-    font-weight: 300;
-    position:absolute;
-    padding-left: 650px;
-    padding-bottom: 25px;
-}
-
-#img3 .carousel-caption{
-    color: rgb(43, 42, 42);
-    text-align:center;
-    font-size: 18px;
-    font-weight: 300;
-    position:absolute;
-    padding-right: 415px;
-    padding-bottom: 25px;
-}
-
-#img4 .carousel-caption{
-    color: rgb(43, 42, 42);
-    text-align:center;
-    font-size: 18px;
-    font-weight: 300;
-    position:absolute;
-    padding-bottom: 10px;
-}
-
 /**fine**/
 #spazio_vuoto{
     width:auto;
@@ -139,3 +99,29 @@ body{ /*per applicare in tutto il body*/
     left: 95%;
     top:-30px;
 }
+
+@media screen and (max-width: 990px){
+    #img1 .carousel-caption{
+        /*color: rgb(244, 237, 237);*/
+        font-weight: 300;
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+    #img2 .carousel-caption{
+        /*color: rgb(43, 42, 42);*/
+        padding-bottom: 10px;
+        padding-left: 0px;
+    }
+    #img3 .carousel-caption{
+        /*color: rgb(43, 42, 42);*/
+        padding-bottom: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+    #img1 img, #img2 img, #img3 img, #img4 img{
+        width: auto;
+    }
+}
+
+
+

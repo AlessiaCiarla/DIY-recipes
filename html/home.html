@@ -15,7 +15,7 @@
         <!--Importo il file css della navbar-->
         <link rel="stylesheet" href="../css/navbar_style.css">
         <!--Importare poi il file css della home-->
-        <link rel="stylesheet" href="../css/home-style.css">
+        <link rel="stylesheet" href="../css/home-style.css?ts=<?=time()?>&quot">
         <!--omino account-->
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
         <!--Importo font api google-->
@@ -59,8 +59,8 @@
             </div>
         </nav>
 
-        <!--carosello-->
-        <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-ride="carousel">
+        <!--carosello--> 
+        <div class="carousel carousel-dark slide" id="carouselExampleCaptions"  data-ride="carousel">
             <div class="carousel-indicators">
                 <li data-target="#carouselExampleCaptions" data-slide-to="0" class="active btn-dark"></li>
                 <li data-target="#carouselExampleCaptions" data-slide-to="1" class="btn-dark"></li>
@@ -69,8 +69,8 @@
             </div>
             <div class="carousel-inner">
                 <div class="carousel-item active" id="img1">
-                    <a href="tua_ricetta.html" target="_self" >
-                        <img src="../images/foto1.jpg" class="d-block w-100" alt="La tua ricetta">
+                    <a href="tua_ricetta.html" target="_self" > <!-- w-100/ --->
+                        <img src="../images/foto1.jpg" class="d-block" alt="La tua ricetta" >
                         <div class="carousel-caption d-md-block">
                             <h4><strong>LA TUA RICETTA</strong></h4>
                             <h6>CREA UN PIATTO PERSONALIZZATO CON I TUOI INGREDIENTI</h6>
@@ -79,7 +79,7 @@
                 </div>
                 <div class="carousel-item" id="img2">
                     <a href="ricette_veloci.html" target="_self" >
-                        <img src="../images/foto2.jpg" class="d-block w-100" alt="Ricette facili e veloci">
+                        <img src="../images/foto2.jpg" class="d-block" alt="Ricette facili e veloci">
                         <div class="carousel-caption d-md-block">
                             <h3><strong>PANCAKES</strong></h3>
                             <h6>RICETTE FACILI E VELOCI</h6>
@@ -88,7 +88,7 @@
                 </div>
                 <div class="carousel-item" id="img3">
                     <a href="ricette_festività.html" target="_self" >
-                        <img src="../images/foto3.jpg" class="d-block w-100" alt="Ricette e festività">
+                        <img src="../images/foto3.jpg" class="d-block" alt="Ricette e festività">
                         <div class="carousel-caption d-md-block">
                             <h4><strong>COUSCOUS<br>
                                 CON VERDURE</strong></h4>
@@ -97,8 +97,8 @@
                     </a>
                 </div>
                 <div class="carousel-item" id="img4">
-                    <img src="../images/foto4.jpg" class="d-block w-100" alt="Idee fai da te">
-                        <a href="idee.html" target="_self" >
+                    <a href="idee.html" target="_self" >
+                            <img src="../images/foto4.jpg" class="d-block" alt="Idee fai da te">
                             <div class="carousel-caption d-md-block">
                                 <h4><strong>RICICLA I TUOI BARATTOLI</strong></h4>
                                 <h6>IDEE FAI DA TE<h6>
