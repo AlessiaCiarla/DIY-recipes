@@ -123,7 +123,7 @@ h2, p {
 
 @media screen and (max-width: 990px){
     /*correggere dimensione container*/
-    #barra_titolo1{
+    #barra_titolo1, #ingredienti, #sotto_sezioni_procedimento{
         height: auto;
         width: 90%;
     }

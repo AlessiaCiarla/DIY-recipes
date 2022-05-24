@@ -112,7 +112,7 @@ body{
     #cards{
         display: grid;
         height: auto;
-        width: auto;
+        width: 99%;
     }
     #card1, #card2, #card3{
         height: auto;

@@ -117,7 +117,7 @@ h2, p {
 
 @media screen and (max-width: 990px){
     /*correggere dimensione container*/
-    #barra_titolo1{
+    #barra_titolo1, #ingredienti{
         height: auto;
         width: 90%;
     }
@@ -146,6 +146,14 @@ h2, p {
         height: auto;
         width: auto;
     }
+    #card2{
+        margin-top: 10px;
+        width: auto;
+    }
+    #card1{
+        max-width:495px;
+    }
+
     #paragrafo2{
         margin-left: 25px;
     }
