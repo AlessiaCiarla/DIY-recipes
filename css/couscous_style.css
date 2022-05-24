@@ -8,7 +8,10 @@ body{
 
 /*titolo grande*/
 #titolo_grande{
-    width: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
     padding-top: 50px;
     padding-left: 440px;
     padding-bottom: 12px;
@@ -112,7 +115,41 @@ h2, p {
     top:-30px;
 }
 
-
+@media screen and (max-width: 990px){
+    /*correggere dimensione container*/
+    #barra_titolo1{
+        height: auto;
+        width: 90%;
+    }
+    #barra_titolo2{
+        height: auto;
+        width: 90%;
+    }
+    #titolo_grande{
+        top:1rem;
+        position:relative;
+        padding: 20px;
+        left:10%;
+    }
+    #sottotitolo{
+        top:1rem;
+        position:relative;
+        padding: 20px;
+        left:10%;
+    }
+    #paragrafo, #paragrafo2{
+        height: auto;
+        width: 90%;
+    }
+    #contenitore{
+        display:grid;
+        height: auto;
+        width: auto;
+    }
+    #paragrafo2{
+        margin-left: 25px;
+    }
+}
 
 
 

@@ -5,7 +5,10 @@ body{
 
 /*titolo grande*/
 #titolo_grande{
-    width: 1330px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
     padding-top: 50px;
     padding-left: 480px;
     padding-bottom: 12px;
@@ -97,4 +100,4 @@ body{
         padding: 20px;
         left:10%;
     }
-  }
+}

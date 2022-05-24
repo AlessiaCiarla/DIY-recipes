@@ -5,7 +5,10 @@ body{
 
 /*titolo grande*/
 #titolo_grande{
-    width: 1330px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+
     padding-top: 50px;
     padding-left: 530px;
     padding-bottom: 12px;
@@ -15,13 +18,6 @@ body{
 #sottotitolo{
     padding-top: 15px;
     padding-left: 540px;
-}
-
-#paragrafo{
-    font-size: 17px;
-    width: 1000px;
-    text-align: center;
-    line-height: 30px;
 }
 
 #cards{
@@ -51,6 +47,7 @@ body{
     -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
     box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
     transition: transform 0.2s ease;
+    width: 400px;
 }
 
 .card-img-top{
@@ -88,4 +85,38 @@ body{
     position: relative;
     left: 95%;
     top:-30px;
+}
+
+@media screen and (max-width: 990px){
+    /*correggere dimensione container*/
+    #barra_titolo1{
+        height: auto;
+        width: 90%;
+    }
+    #barra_titolo2{
+        height: auto;
+        width: 90%;
+    }
+    #titolo_grande{
+        top:1rem;
+        position:relative;
+        padding: 20px;
+        left:10%;
+    }
+    #sottotitolo{
+        top:1rem;
+        position:relative;
+        padding: 20px;
+        left:10%;
+    }
+    #cards{
+        display: grid;
+        height: auto;
+        width: auto;
+    }
+    #card1, #card2, #card3{
+        height: auto;
+        width: 100%;
+        margin-bottom: 10px;
+    }
 }
