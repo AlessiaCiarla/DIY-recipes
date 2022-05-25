@@ -10,6 +10,7 @@ Il sito web è costituito da varie sezioni; quelle principali sono:
  - Idee fai da te
 
 Altre sezioni sono:
+
  - Area privata del profilo personale
  - About(Chi siamo)
 
@@ -21,6 +22,7 @@ Le funzionalità implementate sono le seguenti:
 
     2.Gestione profilo utente
      - Modifica della password
+     - Logout sessione
 
     3.Il sito è responsive in tre browser diversi(Chrome, Edge, Firefox)
 
@@ -29,5 +31,7 @@ Tecnologie Utilizzate:
     - Per quanto riguarda il lato front-end sono stati utilizzati Bootstrap, HTML, CSS, JavaScript, JQuery. Per   quanto riguarda invece il back-end abbiamo utilzzato PHP e un database relazionale tramite XAMPP(che usa Apache e MySQL).
 
 Autori:
+
     - Alessia Ciarla e Pamela Marinelli.
 
+----------------------------------------------------------------------------------------------------------
