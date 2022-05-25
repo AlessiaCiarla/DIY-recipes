@@ -108,9 +108,10 @@ body{ /*per applicare in tutto il body*/
         padding-left: 0px;
     }
     #img2 .carousel-caption{
-        /*color: rgb(43, 42, 42);*/
-        padding-bottom: 10px;
+       /* color: rgb(206, 41, 41);*/
+        padding-bottom: 300px;
         padding-left: 0px;
+        padding-right: 150px;
     }
     #img3 .carousel-caption{
         /*color: rgb(43, 42, 42);*/
