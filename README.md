@@ -25,8 +25,8 @@ Le funzionalità implementate sono le seguenti:
     3.Il sito è responsive in tre browser diversi(Chrome, Edge, Firefox)
 
 Tecnologie Utilizzate:
-    Per quanto riguarda il lato front-end sono stati utilizzati Bootstrap, HTML, CSS, JavaScript, JQuery. Per quanto riguarda invece il back-end abbiamo utilzzato PHP e un database relazionale tramite XAMPP(che usa Apache e MySQL).
+    - Per quanto riguarda il lato front-end sono stati utilizzati Bootstrap, HTML, CSS, JavaScript, JQuery. Per   quanto riguarda invece il back-end abbiamo utilzzato PHP e un database relazionale tramite XAMPP(che usa Apache e MySQL).
 
 Autori:
-    Alessia Ciarla e Pamela Marinelli.
+    - Alessia Ciarla e Pamela Marinelli.
 
