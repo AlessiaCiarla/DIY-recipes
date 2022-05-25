@@ -22,8 +22,10 @@ Le funzionalità implementate sono le seguenti:
     2.Gestione profilo utente
     - Modifica della password
 
+    3.Il sito è responsive in tre browser diversi(Chrome, Edge, Firefox)
+
 Tecnologie Utilizzate
-    Per quanto riguarda il lato front-end sono stati utilizzati Bootstrap, HTML, CSS. Per quanto riguarda invece il back-end abbiamo utilzzato PHP, JavaScript, JQuery e un database relazionale tramite XAMPP(che usa Apache e MySQL).
+    Per quanto riguarda il lato front-end sono stati utilizzati Bootstrap, HTML, CSS, JavaScript, JQuery. Per quanto riguarda invece il back-end abbiamo utilzzato PHP e un database relazionale tramite XAMPP(che usa Apache e MySQL).
 
 Autori
     Alessia Ciarla e Pamela Marinelli.

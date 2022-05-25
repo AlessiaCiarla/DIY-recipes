@@ -1,4 +1,7 @@
-body{  background-image: url(../images/foto6.jpeg);}
+body{  
+    background-image: url(../images/foto6.jpeg);
+    font-family: 'Lora', serif;
+}
 
 .container {
     min-height: 100vh;
