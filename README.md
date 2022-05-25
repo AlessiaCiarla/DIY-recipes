@@ -22,6 +22,7 @@ Le funzionalità implementate sono le seguenti:
 
     2.Gestione profilo utente
      - Modifica della password
+     - Logout sessione
 
     3.Il sito è responsive in tre browser diversi(Chrome, Edge, Firefox)
 
