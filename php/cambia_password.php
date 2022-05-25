@@ -7,8 +7,8 @@ if (isset($_SESSION['username'])) {
 
 if (isset($_POST['nuova']) && isset($_POST['riscrivi'])) {
 
-	function validate($data){
-       $data = trim($data);
+	function validate($data){ // validazione dati
+     $data = trim($data);
 	   $data = stripslashes($data);
 	   $data = htmlspecialchars($data);
 	   return $data;
@@ -24,8 +24,8 @@ if (isset($_POST['nuova']) && isset($_POST['riscrivi'])) {
       header("Location: ../html-php/area_privata.php?error=Le pasword non combaciano"); 
 	  exit();
     }else{
-    	// hashing delle password
-    	$nuova = password_hash($nuova, PASSWORD_DEFAULT);
+    	  // hashing delle password
+    	  $nuova = password_hash($nuova, PASSWORD_DEFAULT);
         $username = $_SESSION['username'];
 
         $sql_2 = "UPDATE utenti

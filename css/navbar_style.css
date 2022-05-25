@@ -28,7 +28,7 @@ body{ /*per applicare in tutto il body*/
 #nav1 .nav-item:not(:last-child) {
     border-right: 1px solid #CD7F32;
 }
-#nav1 .nav-item a { /*crea problemi per la pagina reattiva*/
+#nav1 .nav-item a { 
     padding-left:20px;
     padding-right:20px;
     padding-top: 15px;

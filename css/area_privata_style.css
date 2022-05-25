@@ -1,8 +1,7 @@
-
 body{ 
-   /* background:#635752;*/
     background-image: url(../images/foto6.jpeg);
-    font-family: 'Lora', serif;}
+    font-family: 'Lora', serif;
+}
   h1,h2,h3,h4,h5{color:rgb(254, 254, 254); padding-bottom: 30px;}
 
   /*inserimento media query per il formato mobile, ovvero, con @media, esegue il contenuto solo se ci troviamo a una larghezza da 0 al massimo indicato, di solito per schermi piccoli*/

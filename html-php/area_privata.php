@@ -2,7 +2,7 @@
     session_start();
     if(!isset( $_SESSION['loggato']) ||  $_SESSION['loggato'] !== true){
         header("location: area_privata.php");
-        exit;
+        exit();
     }
 ?>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@
     <!--importo lo head del footer-->
     <?php include 'head_footer.php';?>
     <!--css area privata-->
-    <link rel="stylesheet" href="../css/area_privata_style.css?ts=<?=time()?>&quot">
+    <link rel="stylesheet" href="../css/area_privata_style.css?ts=<?=time()?>&quot"> <!-- utile per ricaricare file css-->
 </head>
 <body>
     <?php include 'navbar.php'; ?> <!--navbar-->

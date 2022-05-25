@@ -1,3 +1,4 @@
+        <!--File da importare quando serve navbar-->
         <!--navbar1--> 
         <nav class="navbar navbar-expand-lg navbar-light bg-opacity-75" id="prima">
             <a class="navbar-brand" href="../html/home.html">
@@ -27,6 +28,7 @@
             </div>
         </div>
     </nav>
+    <!--script per uso bottone hamburger-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
        

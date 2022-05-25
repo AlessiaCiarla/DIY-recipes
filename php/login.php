@@ -1,5 +1,6 @@
 <?php
-     require_once('config.php'); // importo connessione al db
+    // importo connessione al db
+     require_once('config.php'); 
 
      $username = $connessione->real_escape_string($_POST['username']);
      $password = $connessione->real_escape_string($_POST['password']);

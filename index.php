@@ -43,7 +43,7 @@
           <input class="btn" type="submit" name="" value="LOGIN">
           
           <div class="options-02">
-            <p>Non sei registrato? <a href="#"><strong>Crea un Account</a></strong></p>
+            <p>Non sei registrato? <a href="#">Crea un Account</a></p>
           </div>
         </form>
         <!--Fine form login-->
@@ -57,7 +57,7 @@
           <input class="btn" type="submit" name="" value="Registrati">
 
           <div class="options-02">
-            <p><strong>Hai già un account? <a href="#">Accedi</a></strong></p>
+            <p>Hai già un account? <a href="#">Accedi</a></p>
           </div>
 
         </form>

@@ -1,12 +1,11 @@
 <?php
-
-    require_once('config.php'); // importo connessione al db
-
-    $email = $connessione->real_escape_string($_POST['email']); // ottimizzare con preparred
-    $username = $connessione->real_escape_string($_POST['username']); // fare il controllo dell'username esistente con JS
+    // importo connessione al db
+    require_once('config.php'); 
+    // valori degli elementi da index.php 
+    $email = $connessione->real_escape_string($_POST['email']); 
+    $username = $connessione->real_escape_string($_POST['username']);
     $password = $connessione->real_escape_string($_POST['password']);
     $hashed_password = password_hash($password, PASSWORD_DEFAULT); // cripta password con hash
-    // inserire unicità username
     $sql = "INSERT INTO utenti (email, username, password) VALUES ('$email', '$username', '$hashed_password')";
 
     if($connessione->query($sql) === true){

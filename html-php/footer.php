@@ -1,4 +1,4 @@
-<!--barra in basso conclusiva-->
+<!--barra in basso conclusiva da importare nei file dove serve-->
 <div class="container-fluid" id="barra_finale">
             <div class="row" id="row_footer">
                 <div class="block" id="txt_finale">

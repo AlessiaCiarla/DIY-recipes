@@ -1,7 +1,7 @@
 <?php
-    session_start();
+    session_start(); 
     $_SESSION = array();
-    session_destroy();
-    header("location: ../index.php"); 
-    exit;
+    session_destroy(); // distrugge dati associati alla sessione
+    header("location: ../index.php"); // redirect al login 
+    exit();
 ?>

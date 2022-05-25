@@ -1,10 +1,3 @@
-<?php
-    session_start();
-    if(!isset( $_SESSION['loggato']) ||  $_SESSION['loggato'] !== true){
-        header("location: area_privata.php");
-        exit;
-    }
-?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -29,7 +22,7 @@
     <?php include 'navbar.php'; ?> 
     <!-- card pamela-->
     <div class="container">
-        <div class="row justify-content-around"> <!--justify-content-between || justify-content-md-center   col-sm-6-->    
+        <div class="row justify-content-around">     
             <div class="col-sm-6" id="colonna1">
                     <!--<div class="container" id="container1">-->
                     <div class="card" id="card1">
@@ -49,14 +42,13 @@
                         </div>
                     </div>
                
-            </div> <!--colonna-->
-            <div class="col-sm-6" id="colonna2"> <!--offset-md-4-->
+            </div> 
+            <div class="col-sm-6" id="colonna2"> 
                         <!--card Alessia-->
-                        <!--<div class="container" id="container2">-->
                         <div class="card" id="card2">
                             <div class="foto-profilo">
                                 <div class="circle"></div>
-                                <img src="../images/alessia.png" alt="foto profilo alessia" id="foto_ale"> <!--aggiungere foto-->
+                                <img src="../images/alessia.png" alt="foto profilo alessia" id="foto_ale"> 
                             </div>
                             <div class="info">
                                 <h1 class="title">Alessia Ciarla</h1>
@@ -69,10 +61,9 @@
                                 </div>
                             </div>
                         </div>    
-            </div> <!--colonna-->
+            </div> 
         </div>
-    </div> <!--container generale-->
-    
+    </div> 
     <script src="../js/about.js"></script>
 
     <?php include 'footer.php';?>

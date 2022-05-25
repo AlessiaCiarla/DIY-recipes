@@ -56,7 +56,6 @@ body{ /*per applicare in tutto il body*/
     position:absolute;
     padding-bottom: 10px;
 }
-/**********************************/
 .carousel-item{
     height: 75.5vh;
     min-height: 300px;
@@ -99,22 +98,19 @@ body{ /*per applicare in tutto il body*/
     left: 95%;
     top:-30px;
 }
-
+/*Adattamento carosello schermi piccoli*/
 @media screen and (max-width: 990px){
     #img1 .carousel-caption{
-        /*color: rgb(244, 237, 237);*/
         font-weight: 300;
         padding-bottom: 10px;
         padding-left: 0px;
     }
     #img2 .carousel-caption{
-       /* color: rgb(206, 41, 41);*/
         padding-bottom: 300px;
         padding-left: 0px;
         padding-right: 150px;
     }
     #img3 .carousel-caption{
-        /*color: rgb(43, 42, 42);*/
         padding-bottom: 10px;
         padding-left: 0px;
         padding-right: 0px;
