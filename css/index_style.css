@@ -2,6 +2,7 @@ body{
   background-image: url(../images/prova.png);
   font-family: 'Lora', serif;
 }
+
 /*stile del FORM*/
 .container{
   height: 100vh;
@@ -74,6 +75,7 @@ body{
 .form .options-02 a{
   color: rgb(252, 243, 243); /*Accedi*/
 }
+
 /*CSS responsive per schemi piccoli */
 @media screen and (max-width: 500px){
   .form{width: 95%;}

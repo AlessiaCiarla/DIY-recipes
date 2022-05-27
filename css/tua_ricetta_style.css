@@ -1,3 +1,4 @@
+/* personalizzazione dell'intero body*/
 body{ 
     font-family: 'Lora', serif;
     color:rgb(92, 88, 88);
@@ -21,6 +22,7 @@ body{
     padding-left: 620px;
 }
 
+/*personalizzazione del paragrafo d'introduzione della ricetta*/
 #paragrafo{
     font-size: 17px;
     width: 1200px;
@@ -30,6 +32,8 @@ body{
     width: auto;
 }
 
+/* qui viene applicata la personalizzazione dei vari componenti del form costruito per poter inserire i "filtri"
+per le ricette che si vogliono ricercare.*/
 #sfondo{
     padding-left: 30px;
     padding-top: 30px;
@@ -39,7 +43,6 @@ body{
     height: auto;
     width: auto;
 }
-
 #riquadro{
     padding-right: 30px !important;
     padding-bottom: 30px !important;
@@ -54,7 +57,7 @@ body{
 }
 
 
-/**fine**/
+/**footer**/
 #spazio_vuoto{
     width:auto;
     height:30px;
@@ -86,7 +89,7 @@ body{
     top:-30px;
 }
 
-
+/*media query per gestire l'adattamento dello schermo in modalità mobile*/
 @media screen and (max-width: 990px){
     /*correggere dimensione container*/
     #barra_titolo1{

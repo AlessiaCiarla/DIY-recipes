@@ -3,18 +3,16 @@ body{ /*per applicare in tutto il body*/
     color:rgb(92, 88, 88);
 }
 /************carosello************/
+/*di seguito segue la personalizzazione del carosello e delle immagini contenute all'interno*/
 .carousel-item{
     height: 500px;
 }
-
 .carousel-indicators li{
     background-color: rgb(94, 92, 92);
 }
-
 #img1, #img2, #img3, #img4{
     opacity: 0.9; 
 }
-
 #img1 img, #img2 img, #img3 img, #img4 img{
     width: 100%;
 }
@@ -27,7 +25,6 @@ body{ /*per applicare in tutto il body*/
     padding-bottom: 30px;
     padding-left: 250px;
 }
-
 #img2 .carousel-caption{
     color: rgb(43, 42, 42);
     text-align:center;
@@ -37,7 +34,6 @@ body{ /*per applicare in tutto il body*/
     padding-left: 650px;
     padding-bottom: 25px;
 }
-
 #img3 .carousel-caption{
     color: rgb(43, 42, 42);
     text-align:center;
@@ -47,7 +43,6 @@ body{ /*per applicare in tutto il body*/
     padding-right: 415px;
     padding-bottom: 25px;
 }
-
 #img4 .carousel-caption{
     color: rgb(43, 42, 42);
     text-align:center;
@@ -67,7 +62,8 @@ body{ /*per applicare in tutto il body*/
     font-size:18px;
 }
 
-/**fine**/
+
+/**footer*/
 #spazio_vuoto{
     width:auto;
     height:30px;
@@ -98,6 +94,8 @@ body{ /*per applicare in tutto il body*/
     left: 95%;
     top:-30px;
 }
+
+/*media query per gestire l'adattamento dello schermo in modalità mobile*/
 /*Adattamento carosello schermi piccoli*/
 @media screen and (max-width: 990px){
     #img1 .carousel-caption{

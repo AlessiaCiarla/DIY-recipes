@@ -1,3 +1,4 @@
+/* personalizzazione dell'intero body*/
 body{ 
     font-family: 'Lora', serif;
     color:rgb(92, 88, 88);
@@ -20,6 +21,7 @@ body{
     padding-left: 540px;
 }
 
+/* personalizzazione delle card all'interno della griglia*/
 #cards{
     padding-left: 30px;
     padding-top: 30px;
@@ -29,19 +31,17 @@ body{
     height: auto;
     width: auto;
 }
-
 #sec_riga{
     padding-top: 30px;
 }
-
+/*tramite la funzione transform e transition, poco più in basso, è stato creato un effetto per quandp il mouse
+passa sulla card interessata.*/
 #card1:hover, #card2:hover, #card3:hover{
     transform: scale(1.1);
 }
-
 #btn1{
     border: none;
 }
-
 #card1, #card2, #card3{
     -webkit-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
     -moz-box-shadow: -1px 9px 40px -12px rgba(0,0,0,0.75);
@@ -49,13 +49,12 @@ body{
     transition: transform 0.2s ease;
     width: 400px;
 }
-
 .card-img-top{
     object-fit: cover;
 }
 
 
-/**fine**/
+/**footer**/
 #spazio_vuoto{
     width:auto;
     height:30px;
@@ -87,6 +86,7 @@ body{
     top:-30px;
 }
 
+/*media query per gestire l'adattamento dello schermo in modalità mobile*/
 @media screen and (max-width: 990px){
     /*correggere dimensione container*/
     #barra_titolo1{

@@ -1,3 +1,4 @@
+/* personalizzazione dell'intero body*/
 body{ 
     font-family: 'Lora', serif;
     color:rgb(92, 88, 88);
@@ -24,6 +25,7 @@ body{
     padding-left: 540px;
 }
 
+/*personalizzazione del paragrafo d'introduzione della ricetta*/
 #paragrafo{
     font-size: 17px;
     width: 1200px;
@@ -40,13 +42,14 @@ body{
     padding-top: 30px;
 }
 
+/*card1 e card2 sono le due card inserite nella row, e contengono rispettivamente un'immagine e le caratteristiche 
+principali della ricetta*/
 #card1{
     width: 500px !important;
     height: 185px !important;
     object-fit: cover;
     overflow: hidden;
 }
-
 #card2{
     background-color: rgb(96, 97, 97);
 }
@@ -83,7 +86,7 @@ h2, p {
 }
   
 
-/**fine**/
+/**footer**/
 #spazio_vuoto{
     width:auto;
     height:40px;
@@ -115,6 +118,7 @@ h2, p {
     top:-30px;
 }
 
+/*media query per gestire l'adattamento dello schermo in modalità mobile*/
 @media screen and (max-width: 990px){
     /*correggere dimensione container*/
     #barra_titolo1, #ingredienti{
