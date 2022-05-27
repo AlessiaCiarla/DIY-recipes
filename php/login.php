@@ -14,7 +14,7 @@
                 if(password_verify($password, $row['password'])){
                     session_start();
 
-                    $_SESSION['loggato'] = true;
+                    $_SESSION['loggato'] = true; // utente loggato, utile per area_privata.php
                     $_SESSION['id'] = $row['id'];
                     $_SESSION['username'] = $row['username'];
                     header("location: ../html/home.html"); 
