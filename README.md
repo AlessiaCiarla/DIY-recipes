@@ -1,4 +1,4 @@
-Progetto Linguaggi e Tecnologie per il Web, DIY-recipes
+Progetto Linguaggi e Tecnologie per il Web: DIY-recipes
 -----------------------------------------------------------------------------------------------------------
 
 L'idea del progetto consiste nella creazione di un sito web di ricette(frontend e backend).
